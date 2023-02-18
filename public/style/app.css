@@ -1,0 +1,97 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: 'Poppins', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.bg-navbar {
+  background-color: rgba(83, 152, 254, .5);
+}
+
+.nav-link {
+  letter-spacing: 3px;
+}
+
+.img-content{
+  width: 100%;
+}
+
+.text-content{
+  text-align: center;
+  font-size: 80px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 3em;
+  top: 2.5em;
+  text-shadow: -5px 5px #5398fe;
+}
+
+.detail-content {
+  text-align: center;
+  font-size: 23px;
+  letter-spacing: 2px;
+  position: absolute;
+  left: 22em;
+  top: 15em;
+  text-shadow: 2px 3px #5398fe;
+}
+
+.play-button {
+  width: 250px;
+  color: #5398fe;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  left: 31.7em;
+  top: 25em;
+  background-color: white;
+}
+
+.play-button:hover {
+  color: white;
+  background-color: #5398fe;
+}
+
