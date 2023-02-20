@@ -85,12 +85,51 @@
           <p class="detail-content">Experience new traditional gameplay</p>
           <a href="#" class="btn play-button">Play Now</a>
         </div>
-        <div>
-          <img
-            src="/public/assets/images/91657.jpg"
-            alt="Game Choice"
-            class="img-content"
-          />
+        <div class="game-choice">
+          <h1 class="text-choice">
+            Available Games
+          </h1>
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="/public/assets/images/game-choice.jpg" class="d-block w-100" alt="Game Choice" />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="/public/assets/images/game-choice.jpg" class="d-block w-100" alt="Game Choice" />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="/public/assets/images/game-choice.jpg" class="d-block w-100" alt="Game Choice" />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
+            >
+              <span
+                class="fa-sharp fa-solid fa-circle-arrow-left icon-slider"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span
+                class="fa-sharp fa-solid fa-circle-arrow-right icon-slider"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
     </main>
