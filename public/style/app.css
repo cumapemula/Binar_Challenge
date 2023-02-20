@@ -15,7 +15,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 10px;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -43,85 +43,86 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* Navbar */
 .bg-navbar {
-  background-color: #5398fe;
+  background-color: #fff;
 }
-
 .nav-link {
-  letter-spacing: 3px;
-}
-
-.img-content{
-  width: 100%;
-}
-
-.text-content{
-  text-align: center;
-  font-size: 80px;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  position: absolute;
-  left: 3em;
-  top: 2.5em;
-  text-shadow: -5px 5px #5398fe;
 }
-
-.detail-content {
-  text-align: center;
-  font-size: 23px;
-  letter-spacing: 2px;
-  position: absolute;
-  left: 22em;
-  top: 15em;
-  text-shadow: 2px 3px #5398fe;
+a.nav-link{
+  transition: ease .5s;
 }
-
-.play-button {
-  width: 250px;
-  color: #5398fe;
-  letter-spacing: 1px;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  position: absolute;
-  left: 31.7em;
-  top: 25em;
-  background-color: white;
+a.nav-link:hover{
+  color: #000 !important;
+  transform: translateY(-2px);
 }
-
-.play-button:hover {
-  color: white;
-  background-color: #5398fe;
-}
-
-.game-choice{
-  width: 100%;
-  height: 150vh;
-  background-image: url('/public/assets/images/bg-game-choice.jpg');
+/* Homepage - Main Screen */
+.main-screen{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/public/assets/images/header.jpg');
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
-
-.carousel {
-  width: 700px;
-  top: 20em;
-  float: right;
+.text-content{
+  text-align: center;
+  font-size: 5vmax;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  top: 25%;
+  margin: auto;
+  text-shadow: -5px 5px #5398fe;
 }
-
+.detail-content {
+  text-align: center;
+  font-size: 2vmax;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  top: 35%;
+  text-shadow: -2px 3px #5398fe;
+}
+.play-button {
+  color: #5398fe;
+  background-color: #fff;
+  letter-spacing: 1px;
+  font-size: 1.5vmax;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  left: 45%;
+  top: 50%;
+}
+.play-button:hover, .play-button:active {
+  color: #fff;
+  background-color: #5398fe !important;
+  border: none !important;
+}
+/* Homepage - Gameplay Options */
+.game-choice{
+  width: 100vw;
+  height: 100vmax;
+  background-image: url('/public/assets/images/bg-game-choice.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.carousel{
+  width: 60vmax;
+  margin: auto;
+  top: 25%;
+}
 .icon-slider{
   font-size: 40px;
 }
-
 .text-choice{
-  font-size: 60px;
+  font-size: 5vmax;
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
-  color: #a41b93;
-  text-shadow: 2px 10px black;
+  color: #fff;
+  text-shadow: -2px 5px #000;
   position: relative;
-  top: 50%;
-  right: 6em;
+  top: 15%;
 }
