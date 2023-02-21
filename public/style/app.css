@@ -84,7 +84,11 @@ a.nav-link:hover{
   top: 35%;
   text-shadow: -2px 3px #5398fe;
 }
+a.btn.play-button{
+  transition: ease .5s;
+}
 .play-button {
+  width: 20vmax;
   color: #5398fe;
   background-color: #fff;
   letter-spacing: 1px;
@@ -92,7 +96,7 @@ a.nav-link:hover{
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
-  left: 45%;
+  left: 40%;
   top: 50%;
 }
 .play-button:hover, .play-button:active {
@@ -103,18 +107,18 @@ a.nav-link:hover{
 /* Homepage - Gameplay Options */
 .game-choice{
   width: 100vw;
-  height: 100vmax;
+  height: 150vh;
   background-image: url('/public/assets/images/bg-game-choice.jpg');
   background-position: center;
   background-size: cover;
 }
 .carousel{
-  width: 60vmax;
+  width: 60vw;
   margin: auto;
   top: 25%;
 }
 .icon-slider{
-  font-size: 40px;
+  font-size: 4vmax;
 }
 .text-choice{
   font-size: 5vmax;
@@ -125,4 +129,39 @@ a.nav-link:hover{
   text-shadow: -2px 5px #000;
   position: relative;
   top: 15%;
+}
+/* Homepage - Game Features */
+.game-features{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/public/assets/images/bg-game-features.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text-features{
+  width: 40vw;
+  font-size: 4vmax;
+  letter-spacing: 2px;
+  display: inline-block;
+  position: relative;
+  top: 20%;
+  left: 15%;
+  color: #fff;
+}
+.text-features span{
+  font-size: 1.5vmax;
+}
+.container-option{
+  margin: 1em;
+}
+.option-features{
+  text-transform: uppercase;
+  font-size: 2vmax;
+  color: #fe3124;
+}
+.detail-features{
+  font-size: 1vmax;
+  padding-top: 20px;
+  margin-bottom: 5em;
 }
