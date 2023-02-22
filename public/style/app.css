@@ -1,79 +1,160 @@
 /* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 10px;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 10px;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
-  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /* Navbar */
 .bg-navbar {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .nav-link {
   letter-spacing: 2px;
   color: #fff;
 }
-a.nav-link{
-  transition: ease .5s;
+a.nav-link {
+  transition: ease 0.5s;
 }
-a.nav-link:hover{
-  color: #000 !important;
+a.nav-link:hover {
+  color: #fff !important;
   transform: translateY(-2px);
 }
 /* Homepage - Main Screen */
-.main-screen{
+.main-screen {
   width: 100vw;
   height: 100vh;
-  background-image: url('/public/assets/images/bg-main-screen.png');
+  background-image: url("/public/assets/images/bg-main-screen.png");
   background-position: center;
   background-size: cover;
 }
-.main-screen::before{
+.main-screen::before {
   content: "";
   width: 100vw;
   height: 100.5vh;
   background: linear-gradient(to top, #0f0f0f 1%, transparent);
   position: absolute;
 }
-.text-content{
+.text-content {
   text-align: center;
   font-size: 5.4vmax;
   letter-spacing: 3px;
@@ -90,8 +171,8 @@ a.nav-link:hover{
   position: relative;
   top: 35%;
 }
-a.btn.play-button{
-  transition: ease .5s;
+a.btn.play-button {
+  transition: ease 0.5s;
 }
 .play-button {
   width: 18vmax;
@@ -105,12 +186,13 @@ a.btn.play-button{
   left: 41%;
   top: 45%;
 }
-.play-button:hover, .play-button:active {
+.play-button:hover,
+.play-button:active {
   color: #1a1917;
   background-color: #ffb548 !important;
   border: none !important;
 }
-.story-text{
+.story-text {
   font-size: 1vmax;
   letter-spacing: 2px;
   text-align: center;
@@ -123,75 +205,75 @@ a.btn.play-button{
   animation-iteration-count: infinite;
   animation-duration: 15s;
 }
-.story-text span{
+.story-text span {
   font-size: 2vmax;
   display: block;
   text-align: center;
   padding-top: 2px;
 }
 /* Homepage - Gameplay Options */
-.game-choice{
+.game-choice {
   width: 100vw;
   height: 150vh;
-  background-image: url('/public/assets/images/bg-game-choice.png');
+  background-image: url("/public/assets/images/bg-game-choice.png");
   background-position: center;
   background-size: cover;
 }
-.game-choice::before{
+.game-choice::before {
   width: 100vw;
   height: 150vh;
   background: radial-gradient(closest-corner, transparent, #0f0f0f 100%);
   content: "";
   position: absolute;
 }
-.carousel-container{
+.carousel-container {
   width: 100vw;
   height: 150vh;
 }
-.carousel-container::before{
+.carousel-container::before {
   content: "";
   width: 100vw;
   height: 150vh;
   position: absolute;
   background: #0f0f0f;
-  opacity: .9;
+  opacity: 0.9;
 }
-.carousel{
+.carousel {
   width: 59vw;
   top: 19%;
   right: 8%;
   float: right;
   position: relative;
 }
-.icon-slider{
+.icon-slider {
   font-size: 4vmax;
   margin: 0;
 }
-.carousel-control-prev{
+.carousel-control-prev {
   width: 0;
   height: 3vmax;
   top: 40%;
   left: -3%;
   position: absolute;
 }
-.carousel-control-next{
+.carousel-control-next {
   width: 0;
   height: 3vmax;
   top: 40%;
   right: -3%;
   position: absolute;
 }
-.text-choice{
+.text-choice {
   font-size: 1.5vmax;
   font-weight: 100;
   letter-spacing: 2px;
   color: #fff;
   text-shadow: -2px 5px #000;
   position: relative;
+  padding-left: 7vmax;
   top: 25%;
-  left: 7%;
 }
-.text-choice span{
+.text-choice span {
   display: block;
   position: relative;
   font-size: 4vmax;
@@ -199,45 +281,83 @@ a.btn.play-button{
   padding-top: 15px;
 }
 /* Homepage - Game Features */
-.game-features{
+.game-features {
   width: 100vw;
-  height: 150vh;
-  background-image: url('/public/assets/images/bg-game-features.png');
+  height: 125vh;
+  background-image: url("/public/assets/images/bg-game-features.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.text-features{
+.game-features::before {
+  content: "";
+  width: 100vw;
+  height: 125vh;
+  background: radial-gradient(closest-corner, transparent -100%, #0f0f0f 100%);
+  position: absolute;
+}
+.features-container{
+  width: 100vw;
+  height: 125vh;
+}
+.text-features {
   width: 40vw;
   font-size: 4vmax;
   letter-spacing: 2px;
-  display: inline-block;
   position: relative;
-  top: 20%;
-  left: 15%;
+  top: 16%;
+  left: 60%;
   color: #fff;
 }
-.text-features span{
+.text-features span {
   font-size: 1.5vmax;
 }
-.container-option{
-  margin: 1em;
+.text-features::before{
+  content: "";
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  background: linear-gradient(to bottom, #0f0f0f , transparent);
+  top: -30%;
+  right: 0;
 }
-.option-features{
+.container-option {
+  margin-top: 1.5em;
+}
+.option-features {
   text-transform: uppercase;
   font-size: 2vmax;
-  color: #fe3124;
+  margin: 7vh 0;
+  color: #ffb548;
+  position: relative;
 }
-.detail-features{
+.option-features span{
+  font-size: 60%;
+  color: transparent;
+  border: 1px solid #fff;
+}
+.option-active::after{
+  content: "";
+  width: 1px;
+  height: 22.2vh;
+  left: 1.5%;
+  background: #fff;
+  position: absolute;
+}
+.detail-features {
+  width: 60%;
   font-size: 1vmax;
-  padding-top: 20px;
-  margin-bottom: 5em;
+  letter-spacing: 2px;
+  margin-top: -3vh;
+  margin-bottom: 5vmax;
+  margin-left: 3vmax;
+  position: relative;
 }
 /* Homepage - Game Requirements */
-.game-requirements{
+.game-requirements {
   width: 100vw;
   height: 150vh;
-  background-image: url('/public/assets/images/bg-game-requirements.png');
+  background-image: url("/public/assets/images/bg-game-requirements.png");
   background-position: center;
   background-size: cover;
 }
