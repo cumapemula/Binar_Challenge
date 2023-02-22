@@ -83,59 +83,67 @@
           </p>
         </div>
         <div class="game-choice">
-          <h1 class="text-choice">Available Games</h1>
-          <div
-            id="carouselExampleInterval"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner rounded">
-              <div class="carousel-item active" data-bs-interval="3000">
-                <img
-                  src="/public/assets/images/game-choice.jpg"
-                  class="d-block w-100"
-                  alt="Game Choice"
-                />
+          <div class="carousel-container">
+            <h1 class="text-choice">What's so special?<span>the games</span></h1>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
               </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <img
-                  src="/public/assets/images/game-choice.jpg"
-                  class="d-block w-100"
-                  alt="Game Choice"
-                />
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img src="/public/assets/images/carousel.png" class="d-block w-100" alt="game choice" />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="/public/assets/images/carousel.png" class="d-block w-100" alt="game choice" />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="/public/assets/images/carousel.png" class="d-block w-100" alt="game choice" />
+                </div>
               </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <img
-                  src="/public/assets/images/game-choice.jpg"
-                  class="d-block w-100"
-                  alt="Game Choice"
-                />
-              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="fa fa-caret-left icon-slider slider-left"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="fa fa-caret-right icon-slider slider-right"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="prev"
-            >
-              <span
-                class="fa-sharp fa-solid fa-circle-arrow-left icon-slider"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="next"
-            >
-              <span
-                class="fa-sharp fa-solid fa-circle-arrow-right icon-slider"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
         <div class="game-features">

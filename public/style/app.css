@@ -67,10 +67,10 @@ a.nav-link:hover{
   background-size: cover;
 }
 .main-screen::before{
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to top, #1a1917 1%, transparent);
   content: "";
+  width: 100vw;
+  height: 100.5vh;
+  background: linear-gradient(to top, #0f0f0f 1%, transparent);
   position: absolute;
 }
 .text-content{
@@ -140,27 +140,63 @@ a.btn.play-button{
 .game-choice::before{
   width: 100vw;
   height: 150vh;
-  background: linear-gradient(to top, transparent 1%, #1a1917);
+  background: radial-gradient(closest-corner, transparent, #0f0f0f 100%);
   content: "";
   position: absolute;
 }
+.carousel-container{
+  width: 100vw;
+  height: 150vh;
+}
+.carousel-container::before{
+  content: "";
+  width: 100vw;
+  height: 150vh;
+  position: absolute;
+  background: #0f0f0f;
+  opacity: .9;
+}
 .carousel{
-  width: 60vw;
-  margin: auto;
-  top: 25%;
+  width: 59vw;
+  top: 19%;
+  right: 8%;
+  float: right;
+  position: relative;
 }
 .icon-slider{
   font-size: 4vmax;
+  margin: 0;
+}
+.carousel-control-prev{
+  width: 0;
+  height: 3vmax;
+  top: 40%;
+  left: -3%;
+  position: absolute;
+}
+.carousel-control-next{
+  width: 0;
+  height: 3vmax;
+  top: 40%;
+  right: -3%;
+  position: absolute;
 }
 .text-choice{
-  font-size: 5vmax;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-align: center;
+  font-size: 1.5vmax;
+  font-weight: 100;
+  letter-spacing: 2px;
   color: #fff;
   text-shadow: -2px 5px #000;
   position: relative;
-  top: 15%;
+  top: 25%;
+  left: 7%;
+}
+.text-choice span{
+  display: block;
+  position: relative;
+  font-size: 4vmax;
+  text-transform: uppercase;
+  padding-top: 15px;
 }
 /* Homepage - Game Features */
 .game-features{
