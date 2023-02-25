@@ -25,7 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/public/style/app.css" />
+    <link rel="stylesheet" href="./style/app.css" />
     <title>Suit Games</title>
   </head>
   <body>
@@ -73,248 +73,307 @@
     </header>
 
     <main>
-      <div class="container-content">
-        <div class="main-screen fw-bold text-white">
-          <h1 class="text-content">Play Traditional Game</h1>
-          <p class="detail-content">Experience new traditional gameplay</p>
-          <a href="#" class="btn play-button">Play Now</a>
-          <p class="story-text animate__animated animate__shakeY">
-            The story <span class="fa fa-caret-down"></span>
-          </p>
-        </div>
-        <div class="game-choice">
-          <div class="carousel-container">
-            <h1 class="text-choice">
-              What's so special?<span>the games</span>
-            </h1>
-            <div
-              id="carouselExampleIndicators"
-              class="carousel slide"
-              data-bs-ride="carousel"
+      <section class="main-screen fw-bold text-white"id="main-screen">
+        <h1 class="text-content">Play Traditional Game</h1>
+        <p class="detail-content">Experience new traditional gameplay</p>
+        <a href="#" class="btn play-button">Play Now</a>
+        <p class="story-text sticky-bottom animate__animated animate__shakeY">
+          The story <span class="fa fa-caret-down"></span>
+        </p>
+      </section>
+      <section class="game-choice" id="game-choice">
+        <div class="carousel-container">
+          <h1 class="text-choice">What's so special?<span>the games</span></h1>
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img
+                  src="./assets/images/carousel.png"
+                  class="d-block w-100"
+                  alt="game choice"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="./assets/images/carousel.png"
+                  class="d-block w-100"
+                  alt="game choice"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="./assets/images/carousel.png"
+                  class="d-block w-100"
+                  alt="game choice"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
             >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                  <img
-                    src="/public/assets/images/carousel.png"
-                    class="d-block w-100"
-                    alt="game choice"
-                  />
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                  <img
-                    src="/public/assets/images/carousel.png"
-                    class="d-block w-100"
-                    alt="game choice"
-                  />
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                  <img
-                    src="/public/assets/images/carousel.png"
-                    class="d-block w-100"
-                    alt="game choice"
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-              >
+              <span
+                class="fa fa-caret-left icon-slider slider-left"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="fa fa-caret-right icon-slider slider-right"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="game-features" id="game-features">
+        <div class="features-container">
+          <div class="text-features">
+            <span>What's so special?</span>
+            <h1 class="py-3 text-uppercase">Features</h1>
+            <div class="container-option">
+              <h1 class="option-features">
                 <span
-                  class="fa fa-caret-left icon-slider slider-left"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
-                <span
-                  class="fa fa-caret-right icon-slider slider-right"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+                  class="option-active fa fa-circle text-white border-0 rounded-circle me-4"
+                ></span
+                >Traditional games
+              </h1>
+              <p class="detail-features">
+                If you miss your childhood, we provide many traditional games
+                here
+              </p>
+              <h1 class="option-features">
+                <span class="fa fa-circle rounded-circle me-4"></span>Game Suit
+              </h1>
+              <h1 class="option-features">
+                <span class="fa fa-circle rounded-circle me-4"></span>TBD
+              </h1>
             </div>
           </div>
         </div>
-        <div class="game-features">
-          <div class="features-container">
-            <div class="text-features">
-              <span>What's so special?</span>
-              <h1 class="py-3 text-uppercase">Features</h1>
-              <div class="container-option">
-                <h1 class="option-features">
-                  <span
-                    class="option-active fa fa-circle text-white border-0 rounded-circle me-4"
-                  ></span
-                  >Traditional games
-                </h1>
-                <p class="detail-features">
-                  If you miss your childhood, we provide many traditional games
-                  here
+      </section>
+      <section class="game-requirements" id="game-requirements">
+        <div class="content-system">
+          <h1 class="title">Can My Computer Run this game?</h1>
+          <h1 class="system-text">System Requirements</h1>
+          <div class="container-system position-relative text-white">
+            <div class="row g-0 row-cols-2">
+              <div class="col">
+                <h1>OS:</h1>
+                <p>
+                  Windows 7 64-bit only <br />
+                  (No OSX support at this time)
                 </p>
-                <h1 class="option-features">
-                  <span class="fa fa-circle rounded-circle me-4"></span>Game
-                  Suit
-                </h1>
-                <h1 class="option-features">
-                  <span class="fa fa-circle rounded-circle me-4"></span>TBD
-                </h1>
+              </div>
+              <div class="col">
+                <h1>Processor:</h1>
+                <p>
+                  Intel Core 2 Duo @ 2.4 GHZ or <br />
+                  AMD Athlon X2 @ 2.8 GHZ
+                </p>
+              </div>
+              <div class="col">
+                <h1>Memory:</h1>
+                <p>4 GB RAM</p>
+              </div>
+              <div class="col">
+                <h1>Storage:</h1>
+                <p>8 GB available space</p>
+              </div>
+              <div class="col-12">
+                <h1>Graphics:</h1>
+                <p>
+                  NVIDIA GeForce GTX 660 2GB or <br />
+                  AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="game-requirements">
-          <div class="content-system">
-            <h1 class="title">Can My Computer Run this game?</h1>
-            <h1 class="system-text">System Requirements</h1>
-            <div class="container-system position-relative text-white">
-              <div class="row g-0 row-cols-2">
-                <div class="col">
-                  <h1>OS:</h1>
-                  <p>
-                    Windows 7 64-bit only <br />
-                    (No OSX support at this time)
+      </section>
+      <section class="top-scores" id="top-scores">
+        <div class="container-score">
+          <div class="title-score position-absolute">
+            <h1 class="text-white display-3 text-uppercase">Top scores</h1>
+            <p class="text-white my-5">
+              This top score from various games provided on this platform
+            </p>
+            <a href="#" class="btn btn-warning w-75 py-3 fw-bold">see more</a>
+          </div>
+          <div class="row">
+            <div class="col-12 border-0 leaderboard">
+              <div class="card mb-5 first-place">
+                <div class="card-body">
+                  <div class="card-title">
+                    <img
+                      src="./assets/images/profil-1.jpg"
+                      alt="profil"
+                      class="profile-img rounded-circle me-4"
+                    />
+                    <h1 class="fs-4 d-inline profile-name">
+                      Evan Lahti
+                      <span
+                        class="fa-brands fa-twitter float-end fs-6 pe-3"
+                      ></span>
+                    </h1>
+                    <p class="d-inline profile-job my-2">PC Gamer</p>
+                  </div>
+                  <p class="card-text text-white mt-4 mb-3">
+                    "One of my gaming highlights of the year."
                   </p>
-                </div>
-                <div class="col">
-                  <h1>Processor:</h1>
-                  <p>
-                    Intel Core 2 Duo @ 2.4 GHZ or <br />
-                    AMD Athlon X2 @ 2.8 GHZ
-                  </p>
-                </div>
-                <div class="col">
-                  <h1>Memory:</h1>
-                  <p>4 GB RAM</p>
-                </div>
-                <div class="col">
-                  <h1>Storage:</h1>
-                  <p>8 GB available space</p>
-                </div>
-                <div class="col-12">
-                  <h1>Graphics:</h1>
-                  <p>
-                    NVIDIA GeForce GTX 660 2GB or <br />
-                    AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
-                  </p>
+                  <p class="blockquote-footer my-3">June 18, 2021</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="top-scores">
-          <div class="container-score">
-            <div class="title-score position-absolute">
-              <h1 class="text-white display-3 text-uppercase">Top scores</h1>
-              <p class="text-white my-5">This top score from various games provided on this platform</p>
-              <a href="#" class="btn btn-warning w-75 py-3 fw-bold">see more</a>
-            </div>
-            <div class="row">
-              <div class="col-12 border-0 leaderboard">
-                <div class="card mb-5 first-place">
-                  <div class="card-body">
-                    <div class="card-title">
-                      <img
-                        src="/public/assets/images/profil-1.jpg"
-                        alt="profil"
-                        class="profile-img rounded-circle me-4"
-                      />
-                      <h1 class="fs-4 d-inline profile-name">
-                        Evan Lahti
-                        <span
-                          class="fa-brands fa-twitter float-end fs-6 pe-3"
-                        ></span>
-                      </h1>
-                      <p class="d-inline profile-job my-2">PC Gamer</p>
-                    </div>
-                    <p class="card-text text-white mt-4 mb-3">
-                      "One of my gaming highlights of the year."
-                    </p>
-                    <p class="blockquote-footer my-3">June 18, 2021</p>
+              <div class="card mb-5 second-place">
+                <div class="card-body">
+                  <div class="card-title">
+                    <img
+                      src="./assets/images/profil-2.jpg"
+                      alt="profil"
+                      class="profile-img rounded-circle me-4"
+                    />
+                    <h1 class="fs-4 d-inline profile-name">
+                      Jada Griffin
+                      <span
+                        class="fa-brands fa-twitter float-end fs-6 pe-3"
+                      ></span>
+                    </h1>
+                    <p class="d-inline profile-job my-2">Nerdreactor</p>
                   </div>
+                  <p class="card-text text-white mt-4 mb-3">
+                    “The next big thing in the world of streaming and survival
+                    games.”
+                  </p>
+                  <p class="blockquote-footer my-3">July 10, 2021</p>
                 </div>
-                <div class="card mb-5 second-place">
-                  <div class="card-body">
-                    <div class="card-title">
-                      <img
-                        src="/public/assets/images/profil-2.jpg"
-                        alt="profil"
-                        class="profile-img rounded-circle me-4"
-                      />
-                      <h1 class="fs-4 d-inline profile-name">
-                        Jada Griffin
-                        <span
-                          class="fa-brands fa-twitter float-end fs-6 pe-3"
-                        ></span>
-                      </h1>
-                      <p class="d-inline profile-job my-2">Nerdreactor</p>
-                    </div>
-                    <p class="card-text text-white mt-4 mb-3">
-                      “The next big thing in the world of streaming and survival
-                      games.”
-                    </p>
-                    <p class="blockquote-footer my-3">July 10, 2021</p>
+              </div>
+              <div class="card mb-5 third-place">
+                <div class="card-body">
+                  <div class="card-title">
+                    <img
+                      src="./assets/images/profil-3.jpg"
+                      alt="profil"
+                      class="profile-img rounded-circle me-4"
+                    />
+                    <h1 class="fs-4 d-inline profile-name">
+                      Aaron Williams
+                      <span
+                        class="fa-brands fa-twitter float-end fs-6 pe-3"
+                      ></span>
+                    </h1>
+                    <p class="d-inline profile-job my-2">Uproxx</p>
                   </div>
-                </div>
-                <div class="card mb-5 third-place">
-                  <div class="card-body">
-                    <div class="card-title">
-                      <img
-                        src="/public/assets/images/profil-3.jpg"
-                        alt="profil"
-                        class="profile-img rounded-circle me-4"
-                      />
-                      <h1 class="fs-4 d-inline profile-name">
-                        Aaron Williams
-                        <span
-                          class="fa-brands fa-twitter float-end fs-6 pe-3"
-                        ></span>
-                      </h1>
-                      <p class="d-inline profile-job my-2">Uproxx</p>
-                    </div>
-                    <p class="card-text text-white mt-4 mb-3">
-                      “Snoop Dogg Playing The Wildly Entertaining 'SOS' Is
-                      Ridiculous.”
-                    </p>
-                    <p class="blockquote-footer my-3">December 24, 2018</p>
-                  </div>
+                  <p class="card-text text-white mt-4 mb-3">
+                    “Snoop Dogg Playing The Wildly Entertaining 'SOS' Is
+                    Ridiculous.”
+                  </p>
+                  <p class="blockquote-footer my-3">December 24, 2018</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="newsletter vh-100 vw-100" id="newsletter">
+        <div class="img-news text-white">
+          <img
+            src="./assets/images/bg-newsletter.png"
+            alt="background newsletter"
+            class="img-news"
+          />
+        </div>
+        <article class="w-50 h-50 float-end me-5 pe-5">
+          <h1 class="text-white fs-4">
+            Want to stay in <br />
+            touch?
+          </h1>
+          <h1 class="text-white my-3 display-2 text-uppercase">
+            Newsletter Subscribe
+          </h1>
+          <p class="text-white">
+            In order to start receiving our news, all you have to do is enter
+            your email address. Everything else will be taken care of by us. We
+            will send you emails containing information about game. We don't
+            spam.
+          </p>
+          <form class="row g-3 w-100 mt-5">
+            <div class="col-auto form-floating w-50">
+              <input
+                type="email"
+                placeholder="youremail@binar.co.id"
+                class="form-control text-warning border-0 ps-3 mt-1 pb-2"
+                id="floatingInput"
+              />
+              <label for="floatingInput" class="ps-4">Your email address</label>
+            </div>
+            <div class="col-auto w-50 btn-sub">
+              <button class="btn btn-warning w-75 h-100 fw-bold" type="submit">
+                Subscribe now
+              </button>
+            </div>
+          </form>
+        </article>
+        <div class="footer d-flex container justify-content-end pb-2 fs-5">
+          <a href="#" class="text-white">Main</a>
+          <a href="#" class="text-white">About</a>
+          <a href="#" class="text-white">Game Features</a>
+          <a href="#" class="text-white">System Requirements</a>
+          <a href="#" class="text-white">Quotes</a>
+          <a href="#"><i class="fa-brands fa-facebook-f text-white"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter text-white"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-twitch text-white"></i></a>
+        </div>
+        <hr class="container text-white fw-bold" />
+        <div class="container d-flex pt-2 pb-5">
+          <p class="flex-grow-1 copyright">
+            &copy; <span id="year"></span> Your Games, Inc. All Rights Reserved
+          </p>
+          <a href="#" class="text-white"
+            >Privacy Policy <span class="px-3">|</span></a
+          >
+          <a href="#" class="text-white"
+            >Terms of Services <span class="px-3">|</span></a
+          >
+          <a href="#" class="text-white">Code of Conduct</a>
+        </div>
+      </section>
     </main>
-
-    <footer></footer>
 
     <script src="/public/script/app.js"></script>
     <script

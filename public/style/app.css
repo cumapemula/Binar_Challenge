@@ -86,6 +86,7 @@ video {
   font-size: 10px;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -141,21 +142,17 @@ a.nav-link:hover {
   transform: translateY(-2px);
 }
 /* Homepage - Main Screen */
-.container-content {
+.main-screen {
   width: 100vw;
-  height: 100vh;
-  background-image: url("/public/assets/images/bg-main-screen.png");
+  height: 120vh;
+  background-image: url("../assets/images/bg-main-screen.png");
   background-position: center;
   background-size: cover;
-}
-.main-screen{
-  width: 100vw;
-  height: 100vh;
 }
 .main-screen::before {
   content: "";
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   background: linear-gradient(to top, #080a0b 1%, transparent);
   position: absolute;
 }
@@ -204,7 +201,7 @@ a.btn.play-button {
   width: 10vw;
   text-transform: uppercase;
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   left: 45%;
   cursor: pointer;
   animation-iteration-count: infinite;
@@ -220,7 +217,7 @@ a.btn.play-button {
 .game-choice {
   width: 100vw;
   height: 150vh;
-  background-image: url("/public/assets/images/bg-game-choice.png");
+  background-image: url("../assets/images/bg-game-choice.png");
   background-position: center;
   background-size: cover;
 }
@@ -289,7 +286,7 @@ a.btn.play-button {
 .game-features {
   width: 100vw;
   height: 125vh;
-  background-image: url("/public/assets/images/bg-game-features.png");
+  background-image: url("../assets/images/bg-game-features.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -366,7 +363,7 @@ a.btn.play-button {
 .game-requirements {
   width: 100vw;
   height: 150vh;
-  background-image: url("/public/assets/images/bg-game-requirements.png");
+  background-image: url("../assets/images/bg-game-requirements.png");
   background-position: center;
   background-size: cover;
 }
@@ -439,7 +436,7 @@ a.btn.play-button {
 .top-scores {
   width: 100vw;
   height: 150vh;
-  background-image: url("/public/assets/images/bg-top-score.png");
+  background-image: url("../assets/images/bg-top-score.png");
   background-position: center;
   background-size: cover;
 }
@@ -469,7 +466,7 @@ a.btn.play-button {
   width: 24vmax;
   background: rgba(255, 255, 255, 0.08);
 }
-.leaderboard .card-text{
+.leaderboard .card-text {
   line-height: 3vh;
 }
 .profile-img {
@@ -511,7 +508,7 @@ a.btn.play-button {
 .third-place {
   margin-left: 30%;
 }
-.title-score{
+.title-score {
   width: 25vw;
   letter-spacing: 1.5px;
   top: 25%;
@@ -519,4 +516,48 @@ a.btn.play-button {
 }
 .title-score p {
   line-height: 3vh;
+}
+/* Homepage - Newsletter */
+.img-news {
+  width: 30vw;
+  height: 90vh;
+  padding-left: 8%;
+  padding-top: 5%;
+}
+.img-news::before {
+  content: "";
+  width: 30vw;
+  height: 100vh;
+  position: absolute;
+  background: radial-gradient(ellipse farthest-side, transparent 3%, #080a0b);
+}
+.newsletter article {
+  bottom: 70%;
+  position: relative;
+  letter-spacing: 2px;
+  line-height: 3vh;
+}
+.form-control,
+.form-control:active {
+  background: rgba(255, 255, 255, 0.08) !important;
+  letter-spacing: 2px;
+}
+.form-floating,
+.copyright {
+  color: rgba(255, 255, 255, 0.4);
+}
+.btn-sub {
+  height: 8vh;
+}
+.footer a {
+  margin: 0 1vw;
+}
+.fa-youtube {
+  color: rgb(255, 0, 0) !important;
+}
+
+
+/* Responsive Styling */
+@media (min-width: 576px) {
+  
 }
