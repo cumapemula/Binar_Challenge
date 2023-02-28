@@ -30,50 +30,40 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-navbar fixed-top">
-        <div class="container">
-          <a class="navbar-brand text-white fas fa-gamepad" href="#"></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold text-uppercase">
-              <li class="nav-item px-3">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="#">Work</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="#">About Me</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold text-uppercase">
-              <li class="nav-item px-3">
-                <a class="nav-link" href="#">Sign Up</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link" href="#">Login</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <nav class="navbar bg-navbar fixed-top d-flex flex-row">
+        <ul
+          class="vw-100 navbar-nav d-flex flex-row justify-content-center mb-2 mb-lg-0 fw-bold text-uppercase"
+        >
+          <a class="navbar-brand mx-5 ps-5 text-white fas fa-gamepad" href="#"></a>
+          <li class="nav-item px-3 home">
+            <span class="fas fa-home d-none"></span>
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item px-4">
+            <span class="fas fa-briefcase d-none"></span>
+            <a class="nav-link" href="#">Work</a>
+          </li>
+          <li class="nav-item px-4">
+            <span class="fas fa-phone d-none"></span>
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item ps-4">
+            <span class="fas fa-address-card d-none"></span>
+            <a class="nav-link" href="#">About Me</a>
+          </li>
+          <li class="ms-auto nav-item px-3">
+            <span class="fas fa-right-to-bracket d-none"></span>
+            <a class="nav-link" href="#">Sign Up</a>
+          </li>
+          <li class="nav-item ps-3 pe-5 me-5">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main>
-      <section class="main-screen fw-bold text-white"id="main-screen">
+      <section class="main-screen fw-bold text-white" id="main-screen">
         <h1 class="text-content">Play Traditional Game</h1>
         <p class="detail-content">Experience new traditional gameplay</p>
         <a href="#" class="btn play-button">Play Now</a>
@@ -245,11 +235,9 @@
                       alt="profil"
                       class="profile-img rounded-circle me-4"
                     />
-                    <h1 class="fs-4 d-inline profile-name">
+                    <h1 class="d-inline profile-name">
                       Evan Lahti
-                      <span
-                        class="fa-brands fa-twitter float-end fs-6 pe-3"
-                      ></span>
+                      <span class="fa-brands fa-twitter float-end pe-3"></span>
                     </h1>
                     <p class="d-inline profile-job my-2">PC Gamer</p>
                   </div>
@@ -267,11 +255,9 @@
                       alt="profil"
                       class="profile-img rounded-circle me-4"
                     />
-                    <h1 class="fs-4 d-inline profile-name">
+                    <h1 class="d-inline profile-name">
                       Jada Griffin
-                      <span
-                        class="fa-brands fa-twitter float-end fs-6 pe-3"
-                      ></span>
+                      <span class="fa-brands fa-twitter float-end pe-3"></span>
                     </h1>
                     <p class="d-inline profile-job my-2">Nerdreactor</p>
                   </div>
@@ -290,11 +276,9 @@
                       alt="profil"
                       class="profile-img rounded-circle me-4"
                     />
-                    <h1 class="fs-4 d-inline profile-name">
+                    <h1 class="d-inline profile-name">
                       Aaron Williams
-                      <span
-                        class="fa-brands fa-twitter float-end fs-6 pe-3"
-                      ></span>
+                      <span class="fa-brands fa-twitter float-end pe-3"></span>
                     </h1>
                     <p class="d-inline profile-job my-2">Uproxx</p>
                   </div>
@@ -318,14 +302,14 @@
           />
         </div>
         <article class="w-50 h-50 float-end me-5 pe-5">
-          <h1 class="text-white fs-4">
+          <h1 class="text-white fs-4 title-news">
             Want to stay in <br />
             touch?
           </h1>
-          <h1 class="text-white my-3 display-2 text-uppercase">
+          <h1 class="text-white my-3 display-2 text-uppercase text-news">
             Newsletter Subscribe
           </h1>
-          <p class="text-white">
+          <p class="text-white detail-news">
             In order to start receiving our news, all you have to do is enter
             your email address. Everything else will be taken care of by us. We
             will send you emails containing information about game. We don't
@@ -359,17 +343,13 @@
           <a href="#"><i class="fa-brands fa-youtube"></i></a>
           <a href="#"><i class="fa-brands fa-twitch text-white"></i></a>
         </div>
-        <hr class="container text-white fw-bold" />
-        <div class="container d-flex pt-2 pb-5">
+        <hr class="footer container text-white fw-bold" />
+        <div class="footer container d-flex pt-2 pb-5">
           <p class="flex-grow-1 copyright">
             &copy; <span id="year"></span> Your Games, Inc. All Rights Reserved
           </p>
-          <a href="#" class="text-white"
-            >Privacy Policy <span class="px-3">|</span></a
-          >
-          <a href="#" class="text-white"
-            >Terms of Services <span class="px-3">|</span></a
-          >
+          <a href="#" class="text-white">Privacy Policy</a>
+          <a href="#" class="text-white">Terms of Services</a>
           <a href="#" class="text-white">Code of Conduct</a>
         </div>
       </section>

@@ -134,6 +134,9 @@ table {
   letter-spacing: 2px;
   color: #fff;
 }
+.navbar .home{
+  margin-left: 15vw !important;
+}
 a.nav-link {
   transition: ease 0.5s;
 }
@@ -144,7 +147,7 @@ a.nav-link:hover {
 /* Homepage - Main Screen */
 .main-screen {
   width: 100vw;
-  height: 120vh;
+  height: 135vh;
   background-image: url("../assets/images/bg-main-screen.png");
   background-position: center;
   background-size: cover;
@@ -152,17 +155,17 @@ a.nav-link:hover {
 .main-screen::before {
   content: "";
   width: 100vw;
-  height: 120vh;
+  height: 135vh;
   background: linear-gradient(to top, #080a0b 1%, transparent);
   position: absolute;
 }
 .text-content {
   text-align: center;
-  font-size: 5.4vmax;
+  font-size: 5.3vmax;
   letter-spacing: 3px;
   text-transform: uppercase;
   position: relative;
-  top: 26%;
+  top: 31%;
   margin: auto;
 }
 .detail-content {
@@ -171,7 +174,8 @@ a.nav-link:hover {
   font-weight: 100;
   letter-spacing: 2px;
   position: relative;
-  top: 35%;
+  left: -2%;
+  top: 37%;
 }
 a.btn.play-button {
   transition: ease 0.5s;
@@ -185,7 +189,7 @@ a.btn.play-button {
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
-  left: 41%;
+  left: 38%;
   top: 45%;
 }
 .play-button:hover,
@@ -201,8 +205,8 @@ a.btn.play-button {
   width: 10vw;
   text-transform: uppercase;
   position: absolute;
-  bottom: -10%;
-  left: 45%;
+  bottom: -30%;
+  left: 43%;
   cursor: pointer;
   animation-iteration-count: infinite;
   animation-duration: 15s;
@@ -280,7 +284,7 @@ a.btn.play-button {
   position: relative;
   font-size: 4vmax;
   text-transform: uppercase;
-  padding-top: 15px;
+  padding-top: 2vh;
 }
 /* Homepage - Game Features */
 .game-features {
@@ -318,17 +322,8 @@ a.btn.play-button {
 .text-features span {
   font-size: 1.5vmax;
 }
-.text-features::before {
-  content: "";
-  width: 100vw;
-  height: 2vh;
-  position: absolute;
-  background: linear-gradient(to bottom, rgba(8, 10, 11, 0.9), #080a0b);
-  top: -30%;
-  right: 0;
-}
 .container-option {
-  margin-top: 1.5em;
+  margin-top: em;
 }
 .option-features {
   text-transform: uppercase;
@@ -345,7 +340,7 @@ a.btn.play-button {
 .option-active::after {
   content: "";
   width: 1px;
-  height: 22.2vh;
+  height: 23vh;
   left: 1.5%;
   background: #fff;
   position: absolute;
@@ -353,6 +348,7 @@ a.btn.play-button {
 .detail-features {
   width: 60%;
   font-size: 1vmax;
+  line-height: 3vh;
   letter-spacing: 2px;
   margin-top: -3vh;
   margin-bottom: 5vmax;
@@ -362,7 +358,7 @@ a.btn.play-button {
 /* Homepage - Game Requirements */
 .game-requirements {
   width: 100vw;
-  height: 150vh;
+  height: 130vh;
   background-image: url("../assets/images/bg-game-requirements.png");
   background-position: center;
   background-size: cover;
@@ -370,7 +366,7 @@ a.btn.play-button {
 .game-requirements:before {
   content: "";
   width: 100vw;
-  height: 150vh;
+  height: 130vh;
   background: radial-gradient(
     circle farthest-side at center right,
     transparent -10%,
@@ -380,16 +376,8 @@ a.btn.play-button {
 }
 .content-system {
   width: 100vw;
-  height: 150vh;
+  height: 130vh;
   position: relative;
-}
-.content-system::before {
-  content: "";
-  width: 100vw;
-  height: 2vh;
-  position: absolute;
-  top: -1%;
-  background: linear-gradient(to bottom, rgba(8, 10, 11, 0.9), #080a0b);
 }
 .title {
   width: 50vw;
@@ -407,11 +395,11 @@ a.btn.play-button {
   letter-spacing: 2px;
   color: #fff;
   position: relative;
-  top: 17%;
+  top: 28%;
   left: 5%;
 }
 .container-system {
-  width: 50vw;
+  width: 45vw;
   top: 30%;
   left: 5%;
   letter-spacing: 2px;
@@ -460,10 +448,10 @@ a.btn.play-button {
 .leaderboard {
   width: 25vw;
   left: 60%;
-  position: relative;
+  position: absolute;
 }
 .leaderboard .card {
-  width: 24vmax;
+  width: 30vw;
   background: rgba(255, 255, 255, 0.08);
 }
 .leaderboard .card-text {
@@ -476,6 +464,7 @@ a.btn.play-button {
   z-index: 1;
 }
 .profile-name {
+  font-size: 1.5vmax;
   width: 18vmax;
   letter-spacing: 2px;
   color: #ffb548;
@@ -494,6 +483,7 @@ a.btn.play-button {
   z-index: 0;
 }
 .profile-job {
+  font-size: 1vmax;
   top: 25%;
   position: absolute;
 }
@@ -502,6 +492,10 @@ a.btn.play-button {
 .leaderboard .blockquote-footer {
   color: rgba(255, 255, 255, 0.4);
 }
+.leaderboard .blockquote-footer,
+.leaderboard .fa-twitter {
+  font-size: 1vmax;
+}
 .first-place {
   margin-left: 40%;
 }
@@ -509,7 +503,7 @@ a.btn.play-button {
   margin-left: 30%;
 }
 .title-score {
-  width: 25vw;
+  width: 25vmax;
   letter-spacing: 1.5px;
   top: 25%;
   left: 10%;
@@ -542,22 +536,689 @@ a.btn.play-button {
   background: rgba(255, 255, 255, 0.08) !important;
   letter-spacing: 2px;
 }
+.form-control{
+  width: 24vw !important;
+  height: 7vh !important;
+}
+.form-floating label{
+  margin: .5vh 0 !important;
+}
 .form-floating,
 .copyright {
   color: rgba(255, 255, 255, 0.4);
 }
 .btn-sub {
   height: 8vh;
+  padding-left: 2vw !important;
 }
 .footer a {
-  margin: 0 1vw;
+  margin: 0 1.5vw;
 }
 .fa-youtube {
-  color: rgb(255, 0, 0) !important;
+  color: #ff0000 !important;
 }
 
-
 /* Responsive Styling */
-@media (min-width: 576px) {
-  
+/* Small Devices */
+@media (max-width: 575.9px) {
+  /* Navbar */
+  .navbar{
+    width: 100vw;
+    height: 10vh;
+    top: 90%;
+  }
+  .bg-navbar{
+    background-color: #fff;
+  }
+  .navbar-brand{
+    display: none;
+  }
+  .nav-item{
+    padding: 0 !important;
+    margin: 0 .5vw !important;
+  }
+  .navbar-nav{
+    justify-content: space-between !important;
+  }
+  .nav-link{
+    display: none;
+  }
+  .nav-item span{
+    font-size: 4vmax;
+    display: inline !important;
+    color: #080a0b;
+    margin: auto;
+  }
+  /* Homepage - Main Screen */
+  .main-screen,
+  .main-screen::before {
+    height: 65vh;
+  }
+  .text-content {
+    font-size: 4.5vmax;
+    top: 35%;
+  }
+  .detail-content {
+    font-size: 1.5vmax;
+    top: 40%;
+    right: 2%;
+  }
+  .play-button {
+    top: 45%;
+    left: 38%;
+  }
+  .story-text {
+    bottom: 40%;
+    left: 42.5%;
+  }
+  /* Homepage - Game Choice */
+  .game-choice,
+  .game-choice::before,
+  .carousel-container,
+  .carousel-container::before {
+    height: 70vh;
+  }
+  .carousel {
+    width: 50vw;
+  }
+  .text-choice {
+    top: 25%;
+  }
+  .text-choice span {
+    padding-top: 1vh;
+  }
+  /* Homepage - Game Features */
+  .game-features,
+  .game-features::before,
+  .features-container {
+    height: 60vh;
+  }
+  .option-features {
+    margin: 3vh 0;
+  }
+  .detail-features {
+    line-height: 1.5vh;
+    margin: -1vh 0 5vh 6vh;
+  }
+  .option-active::after {
+    height: 13vh;
+  }
+  /* Homepage - Game Requirements */
+  .game-requirements,
+  .game-requirements:before,
+  .content-system {
+    height: 70vh;
+  }
+  .title {
+    font-size: 1vmax;
+  }
+  .system-text {
+    top: 23%;
+  }
+  .container-system {
+    top: 25%;
+  }
+  .container-system h1 {
+    font-size: 1.5vmax;
+    margin: 1vh 0 0 1vw;
+  }
+  .container-system p {
+    letter-spacing: 1px;
+    line-height: 1.5vh;
+    margin: 1vh;
+  }
+  /* Homepage - Top Scores */
+  .top-scores,
+  .top-scores::before,
+  .container-score {
+    height: 80vh;
+  }
+  .container-score {
+    top: 10%;
+  }
+  .leaderboard {
+    height: 50vh;
+  }
+  .leaderboard .card,
+  .leaderboard .card-body {
+    width: 29vw;
+    height: 15vh;
+    margin-bottom: 2vh !important;
+  }
+  .leaderboard .card-body {
+    padding: 5px 0 0 5px;
+  }
+  .leaderboard .blockquote-footer {
+    margin: 2vh 0 !important;
+  }
+  .leaderboard .card-text {
+    font-size: 1vmax;
+    margin: 0 !important;
+    padding-right: 1vw;
+    line-height: 1.5vh;
+  }
+  .profile-img,
+  .profile-name::before {
+    width: 20px;
+    height: 20px;
+  }
+  .profile-name {
+    width: 20vw;
+    letter-spacing: 1px;
+    top: 12%;
+  }
+  .profile-img {
+    margin-right: 1.5vw !important;
+    margin-left: 0.5vw !important;
+    top: -20% !important;
+  }
+  .profile-name::before {
+    left: -22%;
+    top: -50%;
+  }
+  .profile-job {
+    margin: 0 !important;
+    top: 25%;
+  }
+  .title-score {
+    top: 20%;
+  }
+  .title-score h1 {
+    font-size: 3.5vmax;
+  }
+  .title-score p {
+    font-size: 1vmax;
+    letter-spacing: 1px;
+    line-height: 2vh;
+    margin: 1vh 0 !important;
+  }
+  .title-score .btn {
+    font-size: 1vmax;
+    text-align: center;
+    width: 15vw !important;
+    height: 4vh;
+    padding: 1vh 0 !important;
+  }
+  .leaderboard .fa-twitter {
+    padding: 0 !important;
+  }
+
+  /* Homepage - Newsletter */
+  .newsletter {
+    height: 40vh;
+  }
+  .img-news,
+  .img-news::before {
+    height: 45vh;
+  }
+  .newsletter article {
+    bottom: 35%;
+    letter-spacing: 1px;
+  }
+  .newsletter form {
+    margin-top: 0 !important;
+  }
+  .title-news {
+    font-size: 1.5vmax !important;
+  }
+  .text-news {
+    font-size: 4vmax;
+  }
+  .detail-news {
+    font-size: 1.5vmax;
+  }
+  .form-floating {
+    width: 50vw !important;
+  }
+  .form-floating label {
+    font-size: 1.5vmax;
+  }
+  .form-control {
+    height: 5vh !important;
+    font-size: 1.5vmax;
+    margin-top: 1.7vh !important;
+    padding-bottom: 3vh !important;
+  }
+  .btn-sub,
+  .btn-sub .btn {
+    width: 39vw !important;
+    height: 5vh !important;
+    font-size: 1.5vmax;
+  }
+  .footer {
+    font-size: 1vmax !important;
+    bottom: 20%;
+    position: relative;
+  }
+}
+/* Small Devices */
+@media (min-width: 576px) and (max-width: 767.9px) {
+  /* Navbar */
+  .navbar{
+    width: 100vw;
+    height: 10vh;
+    top: 90%;
+  }
+  .bg-navbar{
+    background-color: #fff;
+  }
+  .navbar-brand{
+    display: none;
+  }
+  .nav-item{
+    padding: 0 !important;
+    margin: 0 .5vw !important;
+  }
+  .navbar-nav{
+    justify-content: space-between !important;
+  }
+  .nav-link{
+    display: none;
+  }
+  .nav-item span{
+    font-size: 4vmax;
+    display: inline !important;
+    color: #080a0b;
+    margin: auto;
+  }
+  /* Homepage - Main Screen */
+  .main-screen,
+  .main-screen::before {
+    height: 65vh;
+  }
+  .text-content {
+    font-size: 4.5vmax;
+    top: 35%;
+  }
+  .detail-content {
+    font-size: 1.5vmax;
+    top: 40%;
+    right: 2%;
+  }
+  .play-button {
+    top: 45%;
+    left: 38%;
+  }
+  .story-text {
+    bottom: 40%;
+    left: 42.5%;
+  }
+  /* Homepage - Game Choice */
+  .game-choice,
+  .game-choice::before,
+  .carousel-container,
+  .carousel-container::before {
+    height: 70vh;
+  }
+  .carousel {
+    width: 50vw;
+  }
+  .text-choice {
+    top: 25%;
+  }
+  .text-choice span {
+    padding-top: 1vh;
+  }
+  /* Homepage - Game Features */
+  .game-features,
+  .game-features::before,
+  .features-container {
+    height: 60vh;
+  }
+  .option-features {
+    margin: 3vh 0;
+  }
+  .detail-features {
+    line-height: 1.5vh;
+    margin: -1vh 0 5vh 6vh;
+  }
+  .option-active::after {
+    height: 13vh;
+  }
+  /* Homepage - Game Requirements */
+  .game-requirements,
+  .game-requirements:before,
+  .content-system {
+    height: 70vh;
+  }
+  .title {
+    font-size: 1vmax;
+  }
+  .system-text {
+    top: 23%;
+  }
+  .container-system {
+    top: 25%;
+  }
+  .container-system h1 {
+    font-size: 1.5vmax;
+    margin: 1vh 0 0 1vw;
+  }
+  .container-system p {
+    letter-spacing: 1px;
+    line-height: 1.5vh;
+    margin: 1vh;
+  }
+  /* Homepage - Top Scores */
+  .top-scores,
+  .top-scores::before,
+  .container-score {
+    height: 80vh;
+  }
+  .container-score {
+    top: 10%;
+  }
+  .leaderboard {
+    height: 50vh;
+  }
+  .leaderboard .card,
+  .leaderboard .card-body {
+    width: 29vw;
+    height: 15vh;
+    margin-bottom: 2vh !important;
+  }
+  .leaderboard .card-body {
+    padding: 5px 0 0 5px;
+  }
+  .leaderboard .blockquote-footer {
+    margin: 2vh 0 !important;
+  }
+  .leaderboard .card-text {
+    font-size: 1vmax;
+    margin: 0 !important;
+    padding-right: 1vw;
+    line-height: 1.5vh;
+  }
+  .profile-img,
+  .profile-name::before {
+    width: 20px;
+    height: 20px;
+  }
+  .profile-name {
+    width: 20vw;
+    letter-spacing: 1px;
+    top: 12%;
+  }
+  .profile-img {
+    margin-right: 1.5vw !important;
+    margin-left: 0.5vw !important;
+    top: -20% !important;
+  }
+  .profile-name::before {
+    left: -22%;
+    top: -50%;
+  }
+  .profile-job {
+    margin: 0 !important;
+    top: 25%;
+  }
+  .title-score {
+    top: 20%;
+  }
+  .title-score h1 {
+    font-size: 3.5vmax;
+  }
+  .title-score p {
+    font-size: 1vmax;
+    letter-spacing: 1px;
+    line-height: 2vh;
+    margin: 1vh 0 !important;
+  }
+  .title-score .btn {
+    font-size: 1vmax;
+    text-align: center;
+    width: 15vw !important;
+    height: 4vh;
+    padding: 1vh 0 !important;
+  }
+  .leaderboard .fa-twitter {
+    padding: 0 !important;
+  }
+
+  /* Homepage - Newsletter */
+  .newsletter {
+    height: 40vh;
+  }
+  .img-news,
+  .img-news::before {
+    height: 45vh;
+  }
+  .newsletter article {
+    bottom: 35%;
+    letter-spacing: 1px;
+  }
+  .newsletter form {
+    margin-top: 0 !important;
+  }
+  .title-news {
+    font-size: 1.5vmax !important;
+  }
+  .text-news {
+    font-size: 4vmax;
+  }
+  .detail-news {
+    font-size: 1.5vmax;
+  }
+  .form-floating {
+    width: 50vw !important;
+  }
+  .form-floating label {
+    font-size: 1.5vmax;
+  }
+  .form-control {
+    height: 5vh !important;
+    font-size: 1.5vmax;
+    margin-top: 1.7vh !important;
+    padding-bottom: 3vh !important;
+  }
+  .btn-sub,
+  .btn-sub .btn {
+    width: 39vw !important;
+    height: 5vh !important;
+    font-size: 1.5vmax;
+  }
+  .footer {
+    font-size: 1vmax !important;
+    bottom: 20%;
+    position: relative;
+  }
+}
+/* Medium Devices */
+@media (min-width: 768px) and (max-width: 991.9px) {
+  /* Navbar */
+  .navbar{
+    width: 100vw;
+    height: 10vh;
+    top: 90%;
+  }
+  .bg-navbar{
+    background-color: #fff;
+  }
+  .navbar-brand{
+    display: none;
+  }
+  .nav-item{
+    padding: 0 !important;
+    margin: 0 .5vw !important;
+  }
+  .navbar-nav{
+    justify-content: space-between !important;
+  }
+  .nav-link{
+    display: none;
+  }
+  .nav-item span{
+    font-size: 3vmax;
+    display: inline !important;
+    color: #080a0b;
+    margin: 0;
+  }
+  /* Homepage - Main Screen */
+  .main-screen,
+  .main-screen::before {
+    height: 80vh;
+  }
+  .text-content {
+    font-size: 5vmax;
+    top: 32%;
+  }
+  .play-button {
+    top: 48%;
+  }
+  .story-text {
+    bottom: 25%;
+    left: 43%;
+  }
+  /* Homepage - Game Choice */
+  .game-choice,
+  .game-choice::before,
+  .carousel-container,
+  .carousel-container::before {
+    height: 80vh;
+  }
+  .text-choice span {
+    padding-top: 1vh;
+  }
+  /* Homepage - Game Features */
+  .game-features,
+  .game-features::before,
+  .features-container {
+    height: 85vh;
+  }
+  .option-active::after {
+    height: 23vh;
+  }
+  /* Homepage - Game Requirements */
+  .game-requirements,
+  .game-requirements:before,
+  .content-system {
+    height: 80vh;
+  }
+  .title {
+    top: 10%;
+  }
+  .system-text {
+    font-size: 3vmax;
+    top: 13%;
+  }
+  .container-system {
+    top: 15%;
+  }
+  .container-system h1 {
+    font-size: 1vmax;
+  }
+  .container-system p {
+    line-height: 2vh;
+    margin: 1.5vh;
+  }
+  /* Homepage - Top Scores */
+  .top-scores,
+  .top-scores::before,
+  .container-score {
+    height: 80vh;
+  }
+  .container-score {
+    top: 10%;
+  }
+  .leaderboard {
+    height: 50vh;
+  }
+  .leaderboard .card,
+  .leaderboard .card-body {
+    width: 30vw;
+    height: 20vh;
+  }
+  .leaderboard .card-text {
+    font-size: 1vmax;
+    margin: 0 !important;
+    padding-top: 1vh;
+    line-height: 2vh;
+  }
+  .leaderboard .blockquote-footer {
+    margin: 1.5vh 0 !important;
+  }
+  .profile-name {
+    font-size: 1.3vmax;
+    top: 15%;
+  }
+  .profile-img{
+    margin-right: 1.5vw !important;
+  }
+  .profile-img,
+  .profile-name::before {
+    width: 30px;
+    height: 30px;
+  }
+  .profile-name::before {
+    left: -27%;
+    top: -10%;
+  }
+  .profile-job {
+    margin: .5vh 0 0 0 !important;
+    top: 25%;
+  }
+  .title-score {
+    top: 32%;
+  }
+  .title-score h1{
+    font-size: 3.5vmax;
+  }
+  .title-score p {
+    font-size: 1vmax;
+    margin: 2vh 0 !important;
+  }
+  .title-score .btn{
+    padding-top: 1vh !important;
+    padding-bottom: 4vh !important;
+    height: 1vh;
+    font-size: 1.5vmax;
+  }
+  /* Homepage - Newsletter */
+  .newsletter {
+    height: 80vh;
+  }
+  .img-news,
+  .img-news::before {
+    height: 60vh;
+  }
+  .newsletter article {
+    bottom: 45%;
+  }
+  .newsletter form{
+    margin: 1vh 0 0 0 !important;
+  }
+  .title-news {
+    font-size: 1vmax !important;
+  }
+  .text-news {
+    width: 20vw;
+    font-size: 3vmax;
+  }
+  .detail-news {
+    font-size: 1vmax;
+  }
+  .form-floating {
+    width: 25vw !important;
+    height: 7vh !important;
+  }
+  .form-floating label {
+    font-size: 1vmax;
+  }
+  .form-control {
+    width: 25vw !important;
+    height: 7vh !important;
+    font-size: 1vmax;
+    padding: 2vh 0 0 1.6vw !important;
+  }
+  .btn-sub,
+  .btn-sub .btn {
+    width: 25vw !important;
+    height: 5vh !important;
+    font-size: 1vmax;
+  }
+  .footer {
+    font-size: 1vmax !important;
+    position: relative;
+    bottom: 25%;
+  }
 }
