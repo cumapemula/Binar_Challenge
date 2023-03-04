@@ -131,7 +131,7 @@ table {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .nav-link {
-  letter-spacing: .5vmin;
+  letter-spacing: 0.5vmin;
   color: #fff;
 }
 .navbar .home {
@@ -142,7 +142,7 @@ a.nav-link {
 }
 a.nav-link:hover {
   color: #fff !important;
-  transform: translateY(-.8vmin);
+  transform: translateY(-0.8vmin);
 }
 /* Homepage - Main Screen */
 .main-screen {
@@ -192,11 +192,10 @@ a.btn.play-button {
   left: 38%;
   top: 45%;
 }
-.play-button:hover,
-.play-button:active {
-  color: #1a1917;
-  background-color: #ffb548 !important;
-  border: none !important;
+.btn-warning:hover,
+.btn-warning:active {
+  color: #ffb548;
+  background-color: #080a0b !important;
 }
 .story-text {
   font-size: 1vmax;
@@ -328,9 +327,6 @@ a.btn.play-button {
 .text-features span {
   font-size: 1.5vmax;
 }
-.container-option {
-  margin-top: em;
-}
 .option-features {
   text-transform: uppercase;
   font-size: 2vmax;
@@ -356,9 +352,7 @@ a.btn.play-button {
   font-size: 1vmax;
   line-height: 3vh;
   letter-spacing: 2px;
-  margin-top: -3vh;
-  margin-bottom: 5vmax;
-  margin-left: 3vmax;
+  margin: -3vh 0 5vmax 3vmax;
   position: relative;
 }
 /* Homepage - Game Requirements */
@@ -563,7 +557,6 @@ a.btn.play-button {
 .fa-youtube {
   color: #ff0000 !important;
 }
-
 /* Responsive Styling */
 /* X-Small Devices */
 @media (max-width: 575.9px) {
@@ -598,21 +591,21 @@ a.btn.play-button {
   /* Homepage - Main Screen */
   .main-screen,
   .main-screen::before {
-    height: 30vh;
+    height: 60vmin;
   }
   .text-content {
-    font-size: 2vmax;
+    font-size: 4vw;
   }
   .detail-content {
-    font-size: 0.8vmax;
+    font-size: 1vw;
   }
   .play-button {
     width: 15vw;
     height: 2.5vh;
-    font-size: 0.6vmax;
+    font-size: 1vw;
   }
   .story-text {
-    top: 27%;
+    top: 50vmin;
     left: 41%;
   }
   .story-text,
@@ -624,7 +617,7 @@ a.btn.play-button {
   .game-choice::before,
   .carousel-container,
   .carousel-container::before {
-    height: 30vh;
+    height: 60vmin;
   }
   .carousel {
     width: 40vw;
@@ -633,23 +626,31 @@ a.btn.play-button {
   .carousel-indicators {
     margin: 0 !important;
   }
+  .carousel-indicators button{
+    width: 1vw !important;
+    height: 1vw !important;
+  }
   .icon-slider {
-    font-size: 1.5vmax;
+    font-size: 2vmin;
   }
   .text-choice {
-    font-size: 0.5vmax;
+    width: 50vmin;
+    font-size: 1vmin;
     top: 27%;
-    right: 5%;
+    right: 7vw;
   }
   .text-choice span {
-    font-size: 2vmax;
+    font-size: 3vmin;
     padding-top: 1vh;
   }
   /* Homepage - Game Features */
   .game-features,
   .game-features::before,
   .features-container {
-    height: 40vh;
+    height: 60vmin;
+  }
+  .text-features{
+    top: 5%;
   }
   .text-features span {
     font-size: 0.5vmax;
@@ -659,13 +660,13 @@ a.btn.play-button {
     padding: 0 0 2vh !important;
   }
   .option-features {
-    font-size: 0.7vmax !important;
-    margin: 0.5vh 0;
+    font-size: 1.5vmin !important;
+    margin: 0;
   }
   .detail-features {
     font-size: 0.5vmax;
-    line-height: 1vh;
-    margin: -1vh 0 1vh 8vw;
+    line-height: .8vh;
+    margin: 0 0 1vh 4vmax;
   }
   .option-active::after {
     height: 6vh;
@@ -751,9 +752,7 @@ a.btn.play-button {
     top: 12%;
   }
   .profile-img {
-    margin-right: 2vw !important;
-    margin-left: 0.5vw !important;
-    margin-top: 0.4vh !important;
+    margin: .4vh 2vw 0 .5vw !important;
   }
   .profile-name::before {
     left: -20%;
@@ -787,7 +786,6 @@ a.btn.play-button {
   .leaderboard .fa-twitter {
     padding: 0 !important;
   }
-
   /* Homepage - Newsletter */
   .newsletter {
     height: 30vh !important;
@@ -873,7 +871,7 @@ a.btn.play-button {
     display: none;
   }
   .nav-item span {
-    font-size: 4vmax;
+    font-size: 3vmax;
     display: inline !important;
     color: #080a0b;
     margin: auto;
@@ -881,26 +879,26 @@ a.btn.play-button {
   /* Homepage - Main Screen */
   .main-screen,
   .main-screen::before {
-    height: 65vmin;
+    height: 65vh;
   }
   .text-content {
-    font-size: 4.5vmin;
+    font-size: 4.5vmax;
     top: 35%;
   }
   .detail-content {
-    font-size: 1.5vmin;
+    font-size: 1.5vmax;
     top: 40%;
     right: 2%;
   }
   .play-button {
-    width: 15vmin;
-    font-size: 1vmin;
+    width: 15vw;
+    font-size: 1vmax;
     top: 45%;
     left: 38%;
   }
   .story-text {
     bottom: 40%;
-    left: 42.5%;
+    left: 41%;
   }
   /* Homepage - Game Choice */
   .game-choice,
@@ -1033,7 +1031,6 @@ a.btn.play-button {
   .leaderboard .fa-twitter {
     padding: 0 !important;
   }
-
   /* Homepage - Newsletter */
   .newsletter {
     height: 40vh;
@@ -1117,66 +1114,95 @@ a.btn.play-button {
   /* Homepage - Main Screen */
   .main-screen,
   .main-screen::before {
-    height: 60vmin;
+    height: 45vh;
   }
   .text-content {
-    font-size: 5vmax;
+    font-size: 3.5vmax;
     top: 32%;
   }
   .play-button {
     top: 48%;
+    left: 35%;
   }
   .story-text {
-    bottom: 25%;
-    left: 43%;
+    top: 38%;
+    left: 42%;
   }
   /* Homepage - Game Choice */
   .game-choice,
   .game-choice::before,
   .carousel-container,
   .carousel-container::before {
-    height: 80vh;
+    height: 45vh;
+  }
+  .carousel{
+    width: 40vw;
+  }
+  .icon-slider{
+    font-size: 2vmax;
+  }
+  .text-choice{
+    font-size: 1vmax;
   }
   .text-choice span {
+    font-size: 3vmax;
     padding-top: 1vh;
   }
   /* Homepage - Game Features */
   .game-features,
   .game-features::before,
   .features-container {
-    height: 85vh;
+    height: 45vh;
+  }
+  .text-features span{
+    font-size: 1vmax;
+  }
+  .text-features h1{
+    font-size: 3vmax;
+  }
+  .detail-features{
+    margin: 0 0 0 5vw;
+    line-height: 1.5vh;
+  }
+  .option-features{
+    font-size: 1vmax !important;
+    margin: 1vh 0 2vh 0;
   }
   .option-active::after {
-    height: 22vh;
+    height: 10vh;
   }
   /* Homepage - Game Requirements */
   .game-requirements,
   .game-requirements:before,
   .content-system {
-    height: 80vh;
+    height: 45vh;
   }
   .title {
+    font-size: 1vmax;
     top: 10%;
   }
   .system-text {
     font-size: 3vmax;
-    top: 13%;
+    top: 10%;
   }
   .container-system {
+    width: 50vw;
     top: 15%;
   }
   .container-system h1 {
+    margin-top: 1vh;
     font-size: 1vmax;
   }
   .container-system p {
-    line-height: 2vh;
-    margin: 1.5vh;
+    font-size: .8vmax;
+    line-height: 1vh;
+    margin: 1vh;
   }
   /* Homepage - Top Scores */
   .top-scores,
   .top-scores::before,
   .container-score {
-    height: 80vh;
+    height: 55vh;
   }
   .container-score {
     top: 10%;
@@ -1186,14 +1212,14 @@ a.btn.play-button {
   }
   .leaderboard .card,
   .leaderboard .card-body {
-    width: 30vw;
-    height: 20vh;
+    width: 40vw;
+    height: 13vh;
   }
   .leaderboard .card-text {
     font-size: 1vmax;
     margin: 0 !important;
-    padding-top: 1vh;
-    line-height: 2vh;
+    padding-top: 1.5vh;
+    line-height: 1.5vh;
   }
   .leaderboard .blockquote-footer {
     margin: 1.5vh 0 !important;
@@ -1211,7 +1237,7 @@ a.btn.play-button {
     height: 30px;
   }
   .profile-name::before {
-    left: -27%;
+    left: -20%;
     top: -10%;
   }
   .profile-job {
@@ -1222,10 +1248,11 @@ a.btn.play-button {
     top: 32%;
   }
   .title-score h1 {
-    font-size: 3.5vmax;
+    font-size: 3vmax;
   }
   .title-score p {
     font-size: 1vmax;
+    line-height: 1.5vh;
     margin: 2vh 0 !important;
   }
   .title-score .btn {
@@ -1236,14 +1263,14 @@ a.btn.play-button {
   }
   /* Homepage - Newsletter */
   .newsletter {
-    height: 80vh;
+    height: 45vh;
   }
   .img-news,
   .img-news::before {
-    height: 60vh;
+    height: 50vh;
   }
   .newsletter article {
-    bottom: 45%;
+    bottom: 40%;
   }
   .newsletter form {
     margin: 1vh 0 0 0 !important;
@@ -1281,23 +1308,24 @@ a.btn.play-button {
   .footer {
     font-size: 1vmax !important;
     position: relative;
-    bottom: 25%;
+    bottom: 20%;
   }
 }
 /* Desktop */
 @media (min-width: 992px) and (max-width: 1199.9px) {
   /* Navbar */
-  .navbar-brand{
+  .navbar-brand {
     margin-left: 0 !important;
   }
-  .nav-item{
+  .nav-item {
     padding: 0 1vw !important;
   }
   .navbar .home {
     margin-left: 5vw !important;
   }
   /* Homepage - Main Screen */
-  .main-screen, .main-screen::before {
+  .main-screen,
+  .main-screen::before {
     height: 100vh;
   }
   .text-content {
@@ -1307,14 +1335,16 @@ a.btn.play-button {
     bottom: 10%;
   }
   /* Homepage - Game Features */
-  .game-features, .game-features::before, .features-container {
+  .game-features,
+  .game-features::before,
+  .features-container {
     height: 110vh;
   }
   .detail-features {
     margin-left: 4vmax;
   }
-  .option-active::after{
-    height: 24vh;
+  .option-active::after {
+    height: 15vmax;
   }
   /* Homepage - Top Scores */
   .leaderboard .card {
@@ -1338,7 +1368,7 @@ a.btn.play-button {
     margin: 5vh 0 !important;
   }
   /* Homepage - Newsletter */
-  .title-news{
+  .title-news {
     line-height: 4vh;
   }
   .form-control {

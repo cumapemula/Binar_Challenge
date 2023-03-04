@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Url CDN Bootstrap v5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <!-- Url Animate CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- Url Font Awesome for icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -21,56 +24,64 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Url Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/app.css" />
+    <link rel="icon" href="./assets/images/logo.jpg" />
     <title>Suit Games</title>
   </head>
   <body>
+    <!-- Navbar -->
     <header>
       <nav class="navbar bg-navbar fixed-top d-flex flex-row">
         <ul
           class="vw-100 navbar-nav d-flex flex-row justify-content-center mb-2 mb-lg-0 fw-bold text-uppercase"
         >
-          <a class="navbar-brand mx-5 ps-5 text-white fas fa-gamepad" href="#"></a>
+          <a
+            class="navbar-brand mx-5 ps-5 text-white fas fa-gamepad"
+            href="#"
+          ></a>
           <li class="nav-item px-3 home">
             <span class="fas fa-home d-none"></span>
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#main-screen">Home</a>
           </li>
           <li class="nav-item px-4">
             <span class="fas fa-briefcase d-none"></span>
-            <a class="nav-link" href="#">Work</a>
+            <a class="nav-link" href="#game-choice">Work</a>
           </li>
           <li class="nav-item px-4">
             <span class="fas fa-phone d-none"></span>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#game-features">Contact</a>
           </li>
           <li class="nav-item ps-4">
             <span class="fas fa-address-card d-none"></span>
-            <a class="nav-link" href="#">About Me</a>
+            <a class="nav-link" href="#game-requirements">About Me</a>
           </li>
           <li class="ms-auto nav-item px-3">
             <span class="fas fa-right-to-bracket d-none"></span>
-            <a class="nav-link" href="#">Sign Up</a>
+            <a class="nav-link" href="#top-scores">Sign Up</a>
           </li>
           <li class="nav-item ps-3 pe-5 me-5">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="#newsletter">Login</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
+      <!-- Homepage - Main Screen -->
       <section class="main-screen fw-bold text-white" id="main-screen">
         <h1 class="text-content">Play Traditional Game</h1>
         <p class="detail-content">Experience new traditional gameplay</p>
-        <a href="#" class="btn play-button">Play Now</a>
+        <a href="#" class="btn btn-warning play-button">Play Now</a>
         <p class="story-text animate__animated animate__shakeY">
           The story <span class="fa fa-caret-down"></span>
         </p>
       </section>
+      <!-- Homepage - Game Choice -->
       <section class="game-choice" id="game-choice">
         <div class="carousel-container">
           <h1 class="text-choice">What's so special?<span>the games</span></h1>
@@ -151,6 +162,7 @@
           </div>
         </div>
       </section>
+      <!-- Homepage - Game Features -->
       <section class="game-features" id="game-features">
         <div class="features-container">
           <div class="text-features">
@@ -177,6 +189,7 @@
           </div>
         </div>
       </section>
+      <!-- Homepage - System Requirements -->
       <section class="game-requirements" id="game-requirements">
         <div class="content-system">
           <h1 class="title">Can My Computer Run this game?</h1>
@@ -216,6 +229,7 @@
           </div>
         </div>
       </section>
+      <!-- Homepage - Top Scores -->
       <section class="top-scores" id="top-scores">
         <div class="container-score">
           <div class="title-score position-absolute">
@@ -293,6 +307,7 @@
           </div>
         </div>
       </section>
+      <!-- Newsletter & Footer -->
       <section class="newsletter vh-100 vw-100" id="newsletter">
         <div class="img-news text-white">
           <img
@@ -332,7 +347,9 @@
             </div>
           </form>
         </article>
-        <div class="footer footer-top d-flex container justify-content-end pb-2 fs-5">
+        <div
+          class="footer footer-top d-flex container justify-content-end pb-2 fs-5"
+        >
           <a href="#" class="text-white">Main</a>
           <a href="#" class="text-white">About</a>
           <a href="#" class="text-white">Game Features</a>
@@ -356,6 +373,7 @@
     </main>
 
     <script src="/public/script/app.js"></script>
+    <!-- Url Javascript Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
