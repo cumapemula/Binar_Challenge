@@ -130,10 +130,10 @@ table {
 .parapraph {
   font-size: 1.5vw;
 }
-.btn-warning{
-  transition:  all .5s;
+.btn-warning {
+  transition: all 0.5s;
 }
-.btn-warning:hover{
+.btn-warning:hover {
   color: #ffb548;
   background: #080a0b;
 }
@@ -160,7 +160,8 @@ table {
 .nav-link {
   display: none;
 }
-.nav-link:hover, .navbar-brand:hover{
+.nav-link:hover,
+.navbar-brand:hover {
   color: #ffb548 !important;
 }
 .nav-item span {
@@ -708,7 +709,7 @@ table {
     right: 8px;
     top: 25px;
   }
-  .top-scores .third-place .fa-twitter{
+  .top-scores .third-place .fa-twitter {
     left: 3vw;
   }
   /* Homepage - Newsletter */
@@ -874,13 +875,13 @@ table {
   .top-scores .blockquote-footer {
     top: 30px;
   }
-  .top-scores .fa-twitter{
+  .top-scores .fa-twitter {
     left: 10vw;
   }
-  .top-scores .first-place .fa-twitter{
+  .top-scores .first-place .fa-twitter {
     left: 12vw;
   }
-  .top-scores .third-place .fa-twitter{
+  .top-scores .third-place .fa-twitter {
     left: 7vw;
   }
   /* Homepage - Newsletter */
@@ -1039,13 +1040,13 @@ table {
   .third-place {
     margin-left: 60px;
   }
-  .top-scores .fa-twitter{
+  .top-scores .fa-twitter {
     left: 13vw;
   }
-  .top-scores .first-place .fa-twitter{
+  .top-scores .first-place .fa-twitter {
     left: 15vw;
   }
-  .top-scores .third-place .fa-twitter{
+  .top-scores .third-place .fa-twitter {
     left: 9vw;
   }
   /* Homepage - Newsletter */
@@ -1129,7 +1130,7 @@ table {
   .profile-img {
     width: 55px;
   }
-  .profile-name{
+  .profile-name {
     left: 20px;
   }
   .profile-job {
@@ -1150,13 +1151,13 @@ table {
   .first-place {
     margin-left: 90px;
   }
-  .top-scores .fa-twitter{
+  .top-scores .fa-twitter {
     left: 13vw;
   }
-  .top-scores .first-place .fa-twitter{
+  .top-scores .first-place .fa-twitter {
     left: 15vw;
   }
-  .top-scores .third-place .fa-twitter{
+  .top-scores .third-place .fa-twitter {
     left: 9vw;
   }
   /* Homepage - Newsletter */
@@ -1299,13 +1300,13 @@ table {
     top: 90px;
     padding-left: 5px;
   }
-  .top-scores .fa-twitter{
+  .top-scores .fa-twitter {
     left: 13vw;
   }
-  .top-scores .first-place .fa-twitter{
+  .top-scores .first-place .fa-twitter {
     left: 15vw;
   }
-  .top-scores .third-place .fa-twitter{
+  .top-scores .third-place .fa-twitter {
     left: 9vw;
   }
   /* Homepage - Newsletter */
