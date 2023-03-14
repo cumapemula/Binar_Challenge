@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Url CDN Bootstrap v5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/main.css" />
+    <!-- Url Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Url Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Url Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Suit Games</title>
+  </head>
+  <body>
+    <section>
+      <div class="d-flex justify-content-start my-5 ms-5 pb-5">
+        <a href="index.html" class="fas fa-chevron-left arrow pt-3 fs-2"></a>
+        <img
+          src="./assets/images/back.png"
+          alt="back to home"
+          width="72px"
+          height="72px"
+          class="mx-3"
+        />
+        <h1 class="text-uppercase text-warning fs-2 pt-3 fw-bold">
+          rock paper scissors
+        </h1>
+      </div>
+    </section>
+    <section class="main-page">
+      <div class="container vh-100">
+        <div class="row">
+          <div class="col-5 d-flex flex-column align-items-center">
+            <h1 class="text-uppercase text-black mb-5 fs-2 fw-bold">
+              player 1
+            </h1>
+            <button
+              class="player-choice bg-transparent border-0"
+              value="rock"
+              id="player-rock"
+            >
+              <img
+                src="./assets/images/batu.png"
+                alt="batu"
+                width="128px"
+                height="92px"
+              />
+            </button>
+            <button
+              class="player-choice bg-transparent border-0"
+              value="paper"
+              id="player-paper"
+            >
+              <img
+                src="./assets/images/kertas.png"
+                alt="kertas"
+                width="115px"
+                height="150px"
+              />
+            </button>
+            <button
+              class="player-choice bg-transparent border-0"
+              value="scissors"
+              id="player-scissors"
+            >
+              <img
+                src="./assets/images/gunting.png"
+                alt="gunting"
+                width="134px"
+                height="160px"
+              />
+            </button>
+          </div>
+          <div
+            class="col-2 d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="result" id="result"></div>
+            <button class="refresh border-0 bg-transparent">
+              <img
+                src="./assets/images/refresh.png"
+                alt="refresh"
+                width="77px"
+                height="71px"
+              />
+            </button>
+          </div>
+          <div class="com-pick col-5 d-flex flex-column align-items-center">
+            <h1 class="text-uppercase text-black mb-5 fs-2 fw-bold">com</h1>
+            <button class="bg-transparent border-0" value="rock" id="com-rock">
+              <img
+                src="./assets/images/batu.png"
+                alt="batu"
+                width="128px"
+                height="92px"
+              />
+            </button>
+            <button
+              class="bg-transparent border-0"
+              value="paper"
+              id="com-paper"
+            >
+              <img
+                src="./assets/images/kertas.png"
+                alt="kertas"
+                width="115px"
+                height="150px"
+              />
+            </button>
+            <button
+              class="bg-transparent border-0"
+              value="scissors"
+              id="com-scissors"
+            >
+              <img
+                src="./assets/images/gunting.png"
+                alt="gunting"
+                width="134px"
+                height="160px"
+              />
+            </button>
+            <div id="box-random"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Url Javascript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/app.js"></script>
+  </body>
+</html>
