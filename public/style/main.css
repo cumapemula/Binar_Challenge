@@ -103,7 +103,7 @@ section {
   display: block;
 }
 body {
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   line-height: 1;
   font-family: "Poppins", sans-serif;
   background: #9c835f;
@@ -140,10 +140,19 @@ table {
 }
 @keyframes rotate {
   0% {
-    rotate: -180deg;
+    rotate: 0;
   }
   100% {
-    rotate: 180deg;
+    rotate: -360deg;
+  }
+}
+@keyframes zoom {
+  0% {
+    scale: 0;
+    filter: blur(10px);
+  }
+  100% {
+    scale: 1;
   }
 }
 .arrow {
@@ -169,7 +178,10 @@ table {
   background-color: #c4c4c4 !important;
   border-radius: 10px !important;
 }
-.player-choice,
+.player-choice {
+  margin-bottom: 100px;
+  cursor: pointer;
+}
 .com-pick button {
   margin-bottom: 100px;
   cursor: auto;
@@ -200,8 +212,9 @@ table {
   padding: 30px 20px;
   margin-top: 100px;
   margin-bottom: 100px;
+  border-radius: 10px;
   rotate: -30deg;
-  animation-iteration-count: 3;
+  animation: zoom 2s 3;
 }
 .player-win::before {
   content: "Player 1 win";
@@ -217,8 +230,9 @@ table {
   padding: 30px 25px;
   margin-top: 100px;
   margin-bottom: 100px;
+  border-radius: 10px;
   rotate: -30deg;
-  animation-iteration-count: 3;
+  animation: zoom 2s 3;
 }
 .com-win::before {
   content: "com win";
@@ -234,9 +248,23 @@ table {
   padding: 50px 20px;
   margin-top: 100px;
   margin-bottom: 100px;
+  border-radius: 10px;
   rotate: -30deg;
-  animation-iteration-count: 3;
+  animation: zoom 2s 3;
 }
 .draw::before {
   content: "draw";
+}
+.text-score {
+  background: #996f59;
+  line-height: 25px;
+}
+#player-score,
+#com-score {
+  background: #fff;
+}
+.text-score,
+#player-score,
+#com-score {
+  width: 130px;
 }
