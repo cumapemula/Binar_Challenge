@@ -31,29 +31,29 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="icon" href="./assets/images/back.png">
     <title>Suit Games</title>
   </head>
   <body>
     <audio autoplay id="audio"></audio>
     <section>
       <div class="d-flex justify-content-start my-5 ms-5 pb-5">
-        <a href="index.html" class="fas fa-chevron-left arrow pt-3 fs-2"></a>
+        <a href="index.html" class="fas fa-chevron-left arrow pt-xl-3"></a>
         <img
           src="./assets/images/back.png"
           alt="back to home"
-          width="72px"
-          height="72px"
-          class="mx-3"
+          class="logo-title mx-3"
         />
-        <h1 class="text-uppercase text-warning fs-2 pt-3 fw-bold">
+        <h1 class="title-text text-uppercase text-warning fs-2 pt-3 fw-bold">
           rock paper scissors
         </h1>
       </div>
     </section>
-    <section class="main-page">
-      <div class="container vh-100">
+    <section>
+      <div class="container-fluid vh-100">
         <div class="row">
-          <div class="col-1 d-flex flex-column justify-content-center">
+          <!-- Player Element -->
+          <div class="col-2 d-flex flex-column align-items-center justify-content-center">
             <h1
               class="text-score text-center text-uppercase fs-5 border-1 rounded-top-3 fw-bold py-3 px-1"
             >
@@ -66,8 +66,8 @@
               0
             </p>
           </div>
-          <div class="col-4 d-flex flex-column align-items-center">
-            <h1 class="text-uppercase text-black mb-5 fs-2 fw-bold">
+          <div class="col-3 d-flex flex-column align-items-center">
+            <h1 class="player-text text-uppercase text-black mb-5 fs-2 fw-bold">
               player 1
             </h1>
             <button
@@ -78,8 +78,6 @@
               <img
                 src="./assets/images/batu.png"
                 alt="batu"
-                width="128px"
-                height="92px"
               />
             </button>
             <button
@@ -90,8 +88,6 @@
               <img
                 src="./assets/images/kertas.png"
                 alt="kertas"
-                width="115px"
-                height="150px"
               />
             </button>
             <button
@@ -102,11 +98,10 @@
               <img
                 src="./assets/images/gunting.png"
                 alt="gunting"
-                width="134px"
-                height="160px"
               />
             </button>
           </div>
+          <!-- Result, Refresh, Reset Element -->
           <div
             class="col-2 d-flex flex-column align-items-center justify-content-center"
           >
@@ -115,51 +110,44 @@
               <img
                 src="./assets/images/refresh.png"
                 alt="refresh"
-                width="77px"
-                height="71px"
               />
             </button>
-            <button class="reset btn btn-warning text-uppercase fw-bold mt-5">
+            <button class="reset btn btn-warning text-uppercase fw-bold mt-lg-5">
               reset score
             </button>
           </div>
-          <div class="com-pick col-4 d-flex flex-column align-items-center">
-            <h1 class="text-uppercase text-black mb-5 fs-2 fw-bold">com</h1>
-            <button class="bg-transparent border-0" value="rock" id="com-rock">
+          <!-- Com Element -->
+          <div class="com-list col-3 d-flex flex-column align-items-center">
+            <h1 class="com-text text-uppercase text-black mb-5 fs-2 fw-bold">com</h1>
+            <button class="com-pick bg-transparent border-0" value="rock" id="com-rock">
               <img
                 src="./assets/images/batu.png"
                 alt="batu"
-                width="128px"
-                height="92px"
               />
             </button>
             <button
-              class="bg-transparent border-0"
+              class="com-pick bg-transparent border-0"
               value="paper"
               id="com-paper"
             >
               <img
                 src="./assets/images/kertas.png"
                 alt="kertas"
-                width="115px"
-                height="150px"
               />
             </button>
             <button
-              class="bg-transparent border-0"
+              class="com-pick bg-transparent border-0"
               value="scissors"
               id="com-scissors"
             >
               <img
                 src="./assets/images/gunting.png"
                 alt="gunting"
-                width="134px"
-                height="160px"
               />
             </button>
-            <div id="box-random"></div>
+            <div id="box-spin"></div>
           </div>
-          <div class="col-1 d-flex flex-column justify-content-center">
+          <div class="col-2 d-flex flex-column align-items-center justify-content-center">
             <h1
               class="text-score text-center text-uppercase fs-5 border-1 rounded-top-3 fw-bold py-3 px-1"
             >
@@ -187,6 +175,6 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
     ></script>
-    <script defer src="./script/app.js"></script>
+    <script defer src="./script/main.js"></script>
   </body>
 </html>

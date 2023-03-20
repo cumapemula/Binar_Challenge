@@ -157,44 +157,77 @@ table {
 }
 .arrow {
   color: #724c21;
+  font-size: 15px;
+  padding-top: 12px;
+}
+.logo-title {
+  width: 40px;
+  height: 40px;
+}
+.title-text {
+  font-size: 15px !important;
+  padding-top: 12px !important;
 }
 .result {
   background-image: url("../assets/images/VS.png");
   background-position: center;
   background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
   margin-top: 100px;
 }
-.refresh {
-  margin-top: 100px;
+.refresh img {
+  width: 30px;
+  height: 30px;
+  margin-top: 50px;
 }
 .refresh img:hover {
   animation: rotate 1s infinite;
 }
+.reset {
+  width: 80px;
+  font-size: 10px !important;
+  margin-top: 10px;
+  padding: 5px;
+}
+.player-text,
+.com-text {
+  letter-spacing: 1px;
+  font-size: 15px !important;
+}
 .player-choice:focus {
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
   background-color: #c4c4c4 !important;
   border-radius: 10px !important;
 }
 .player-choice {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
-.com-pick button {
-  margin-bottom: 100px;
+#player-rock img,
+#player-paper img,
+#player-scissors img,
+#com-rock img,
+#com-paper img,
+#com-scissors img {
+  width: 30px;
+  height: 36px;
+}
+.com-list button {
+  margin-bottom: 20px;
   cursor: auto;
 }
 .com-choice {
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
   background-color: #c4c4c4 !important;
   border-radius: 10px !important;
 }
-.box-random {
-  width: 200px;
-  height: 200px;
+.box-spin {
+  width: 50px;
+  height: 50px;
   background-color: #c4c4c4 !important;
   border-radius: 10px !important;
   position: relative;
@@ -202,69 +235,375 @@ table {
   z-index: -1;
 }
 .player-win {
-  width: 275px;
-  height: 150px;
+  width: 80px;
+  height: 20px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 10px;
+  letter-spacing: 1px;
   color: #fff;
   background-color: #4c9654;
-  padding: 30px 20px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding: 20px 15px;
+  margin-top: 70px;
+  margin-bottom: 10px;
   border-radius: 10px;
   rotate: -30deg;
   animation: zoom 2s 3;
 }
 .player-win::before {
   content: "Player 1 win";
+  bottom: 12px;
+  position: relative;
+  line-height: 12px;
 }
 .com-win {
-  width: 275px;
-  height: 150px;
+  width: 80px;
+  height: 20px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 10px;
   color: #fff;
   background-color: #4c9654;
-  padding: 30px 25px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding: 20px 15px;
+  margin-top: 70px;
+  margin-bottom: 10px;
   border-radius: 10px;
   rotate: -30deg;
   animation: zoom 2s 3;
 }
 .com-win::before {
   content: "com win";
+  bottom: 12px;
+  position: relative;
+  line-height: 12px;
 }
 .draw {
-  width: 275px;
-  height: 150px;
+  width: 80px;
+  height: 20px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 10px;
   color: #fff;
   background-color: #035b0c;
-  padding: 50px 20px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding: 20px 20px;
+  margin-top: 70px;
+  margin-bottom: 10px;
   border-radius: 10px;
   rotate: -30deg;
   animation: zoom 2s 3;
 }
 .draw::before {
   content: "draw";
+  bottom: 5px;
+  position: relative;
 }
 .text-score {
+  font-size: 7px !important;
   background: #996f59;
-  line-height: 25px;
+  line-height: 10px;
 }
 #player-score,
 #com-score {
+  font-size: 10px !important;
   background: #fff;
 }
 .text-score,
 #player-score,
 #com-score {
-  width: 130px;
+  width: 50px;
+}
+/* Responsive Design */
+@media (min-width: 576px) {
+  .arrow,
+  .title-text,
+  .player-text,
+  .com-text {
+    font-size: 25px !important;
+  }
+  .logo-title {
+    width: 50px;
+    height: 50px;
+  }
+  .result {
+    width: 60px;
+    height: 60px;
+    margin-top: 250px;
+    margin-bottom: 100px;
+  }
+  .refresh img {
+    width: 40px;
+    height: 40px;
+  }
+  .player-choice:focus,
+  .com-choice,
+  .box-spin {
+    width: 110px;
+    height: 110px;
+  }
+  .player-choice,
+  .com-list button {
+    margin-bottom: 50px;
+  }
+  #player-rock img,
+  #player-paper img,
+  #player-scissors img,
+  #com-rock img,
+  #com-paper img,
+  #com-scissors img {
+    width: 80px;
+    height: 96px;
+  }
+  .player-win,
+  .com-win,
+  .draw {
+    width: 120px;
+    height: 60px;
+    font-size: 20px;
+    padding: 20px 10px;
+    margin-top: 250px;
+    margin-bottom: 100px;
+  }
+  .player-win::before,
+  .com-win::before {
+    bottom: 10px;
+  }
+  .draw::before {
+    content: "draw";
+    bottom: 2px;
+  }
+  .text-score {
+    font-size: 12px !important;
+    line-height: 20px;
+  }
+  #player-score,
+  #com-score {
+    font-size: 15px !important;
+  }
+  .text-score,
+  #player-score,
+  #com-score {
+    width: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .arrow,
+  .title-text,
+  .player-text,
+  .com-text {
+    font-size: 30px !important;
+  }
+  .logo-title {
+    width: 60px;
+    height: 60px;
+  }
+  .result {
+    width: 80px;
+    height: 80px;
+    margin-top: 250px;
+    margin-bottom: 100px;
+  }
+  .refresh img {
+    width: 50px;
+    height: 50px;
+  }
+  .reset {
+    width: 120px;
+    font-size: 15px !important;
+  }
+  .player-choice:focus,
+  .com-choice,
+  .box-spin {
+    width: 140px;
+    height: 140px;
+  }
+  .player-choice,
+  .com-list button {
+    margin-bottom: 70px;
+  }
+  #player-rock img,
+  #player-paper img,
+  #player-scissors img,
+  #com-rock img,
+  #com-paper img,
+  #com-scissors img {
+    width: 100px;
+    height: 115px;
+  }
+  .player-win,
+  .com-win,
+  .draw {
+    width: 150px;
+    height: 90px;
+    font-size: 25px;
+  }
+  .player-win::before,
+  .com-win::before {
+    bottom: 5px;
+    line-height: 30px;
+  }
+  .draw::before {
+    content: "draw";
+    bottom: -10px;
+  }
+  .text-score {
+    font-size: 12px !important;
+    line-height: 20px;
+  }
+  #player-score,
+  #com-score {
+    font-size: 15px !important;
+  }
+  .text-score,
+  #player-score,
+  #com-score {
+    width: 120px;
+    padding: 16px !important;
+  }
+}
+@media (min-width: 992px) {
+  .arrow,
+  .title-text,
+  .player-text,
+  .com-text {
+    font-size: 2.5rem !important;
+  }
+  .logo-title {
+    width: 80px;
+    height: 80px;
+  }
+  .result {
+    width: 100px;
+    height: 100px;
+    margin-top: 350px;
+  }
+  .refresh img {
+    width: 60px;
+    height: 60px;
+    margin-top: 150px;
+  }
+  .reset {
+    width: 140px;
+    font-size: 15px !important;
+    margin-bottom: 20px;
+  }
+  .player-choice:focus,
+  .com-choice,
+  .box-spin {
+    width: 180px;
+    height: 180px;
+  }
+  .player-choice,
+  .com-list button {
+    margin-bottom: 100px;
+  }
+  #player-rock img,
+  #player-paper img,
+  #player-scissors img,
+  #com-rock img,
+  #com-paper img,
+  #com-scissors img {
+    width: 120px;
+    height: 135px;
+  }
+  .player-win,
+  .com-win,
+  .draw {
+    width: 200px;
+    height: 120px;
+    font-size: 30px;
+    margin-top: 350px;
+  }
+  .com-win {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .player-win::before,
+  .com-win::before {
+    bottom: -10px;
+  }
+  .draw::before {
+    bottom: -25px;
+  }
+  .text-score {
+    font-size: 20px !important;
+    line-height: 25px;
+  }
+  #player-score,
+  #com-score {
+    font-size: 20px !important;
+  }
+  .text-score,
+  #player-score,
+  #com-score {
+    width: 160px;
+  }
+}
+@media (min-width: 1200px) {
+  .result {
+    width: 150px;
+    height: 150px;
+    margin-top: 300px;
+  }
+  .refresh {
+    margin-top: -50px;
+  }
+  .reset {
+    margin-top: 20px !important;
+  }
+  .player-choice:focus,
+  .com-choice,
+  .box-spin {
+    width: 200px;
+    height: 200px;
+  }
+  .player-choice,
+  .com-list button {
+    margin-bottom: 100px;
+  }
+  #player-rock img,
+  #com-rock img {
+    width: 128px;
+    height: 92px;
+  }
+  #player-paper img,
+  #com-paper img {
+    width: 115px;
+    height: 150px;
+  }
+  #player-scissors img,
+  #com-scissors img {
+    width: 134px;
+    height: 160px;
+  }
+  .player-win,
+  .com-win,
+  .draw {
+    width: 275px;
+    height: 150px;
+    font-size: 3rem;
+    margin-top: 300px;
+    margin-bottom: 100px;
+  }
+  .player-win {
+    padding: 30px 20px;
+  }
+  .player-win::before,
+  .com-win::before,
+  .draw::before {
+    bottom: 5px;
+  }
+  .com-win {
+    padding: 30px 25px;
+  }
+  .draw {
+    padding: 50px 20px;
+  }
+  .text-score {
+    line-height: 25px;
+  }
+  .text-score,
+  #player-score,
+  #com-score {
+    width: 130px;
+  }
 }
