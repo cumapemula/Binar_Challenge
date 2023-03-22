@@ -196,7 +196,7 @@ table {
   letter-spacing: 1px;
   font-size: 15px !important;
 }
-.player-choice:focus {
+.player-box {
   width: 50px;
   height: 50px;
   background-color: #c4c4c4 !important;
@@ -334,7 +334,7 @@ table {
     width: 40px;
     height: 40px;
   }
-  .player-choice:focus,
+  .player-box,
   .com-choice,
   .box-spin {
     width: 110px;
@@ -410,7 +410,7 @@ table {
     width: 120px;
     font-size: 15px !important;
   }
-  .player-choice:focus,
+  .player-box,
   .com-choice,
   .box-spin {
     width: 140px;
@@ -486,7 +486,7 @@ table {
     font-size: 15px !important;
     margin-bottom: 20px;
   }
-  .player-choice:focus,
+  .player-box,
   .com-choice,
   .box-spin {
     width: 180px;
@@ -550,7 +550,7 @@ table {
   .reset {
     margin-top: 20px !important;
   }
-  .player-choice:focus,
+  .player-box,
   .com-choice,
   .box-spin {
     width: 200px;
