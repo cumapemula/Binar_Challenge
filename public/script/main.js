@@ -105,10 +105,18 @@ playerSelected.forEach((button) => {
     player.choice = button.value;
     console.log(`Player ${player.choice}`);
     com.spin();
-    setTimeout(() => {
+    const timeCheck = setTimeout(() => {
       com.turn();
       checkWinner();
     }, 8000);
+    // Reload / Refresh
+    document.querySelector(".refresh").addEventListener("click", () => {
+      clearTimeout(timeCheck);
+      com.removeBox();
+      boxSpin.classList.remove("box-spin");
+      result.setAttribute("class", "result");
+      audio.setAttribute("src", "");
+    });
   });
 });
 
@@ -120,11 +128,4 @@ document.querySelector(".reset").addEventListener("click", () => {
   comScore.innerText = games.cScore;
   audio.setAttribute("src", "");
   com.removeBox();
-});
-
-// Reload / Refresh
-document.querySelector(".refresh").addEventListener("click", () => {
-  com.removeBox();
-  result.setAttribute("class", "result");
-  audio.setAttribute("src", "");
 });
