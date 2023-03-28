@@ -104,7 +104,6 @@ section {
 }
 body {
   letter-spacing: 2px;
-  line-height: 1;
   font-family: "Poppins", sans-serif;
   background: #9c835f;
 }
@@ -357,7 +356,7 @@ table {
   .com-win,
   .draw {
     width: 120px;
-    height: 60px;
+    height: 85px;
     font-size: 20px;
     padding: 20px 10px;
     margin-top: 250px;
@@ -433,7 +432,7 @@ table {
   .com-win,
   .draw {
     width: 150px;
-    height: 90px;
+    height: 95px;
     font-size: 25px;
   }
   .player-win::before,
@@ -519,10 +518,10 @@ table {
   }
   .player-win::before,
   .com-win::before {
-    bottom: -10px;
+    bottom: 0;
   }
   .draw::before {
-    bottom: -25px;
+    bottom: -15px;
   }
   .text-score {
     font-size: 20px !important;
@@ -588,9 +587,11 @@ table {
     padding: 30px 20px;
   }
   .player-win::before,
-  .com-win::before,
+  .com-win::before {
+    bottom: 30px;
+  }
   .draw::before {
-    bottom: 5px;
+    bottom: 15px;
   }
   .com-win {
     padding: 30px 25px;
