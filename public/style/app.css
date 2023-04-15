@@ -172,7 +172,7 @@ table {
 /* Homepage - Main Screen */
 .main-screen {
   width: 100%;
-  background-image: url("/public/assets/images/bg-main-screen.png");
+  background-image: url("../assets/images/bg-main-screen.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -209,7 +209,7 @@ table {
 /* Homepage - Game Choice */
 .game-choice {
   width: 100%;
-  background-image: url("/public/assets/images/bg-game-choice.png");
+  background-image: url("../assets/images/bg-game-choice.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -269,7 +269,7 @@ table {
 /* Homepage - Game Features */
 .game-features {
   width: 100%;
-  background-image: url("/public/assets/images/bg-game-features.png");
+  background-image: url("../assets/images/bg-game-features.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -327,7 +327,7 @@ table {
 /* Homepage - Game Requirements */
 .game-requirements {
   width: 100%;
-  background-image: url("/public/assets/images/bg-game-requirements.png");
+  background-image: url("../assets/images/bg-game-requirements.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -372,7 +372,7 @@ table {
 /* Homepage - Top Scores */
 .top-scores {
   width: 100%;
-  background-image: url("/public/assets/images/bg-top-score.png");
+  background-image: url("../assets/images/bg-top-score.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -505,9 +505,10 @@ table {
   width: 120px;
   height: 20px !important;
 }
-.form-control:active,
+.form-control:focus,
 .form-control:hover {
   background: rgba(255, 255, 255, 0.08) !important;
+  box-shadow: none !important;
 }
 .btn-news {
   width: 120px;

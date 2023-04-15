@@ -31,7 +31,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="icon" href="./assets/images/back.png">
+    <link rel="icon" href="./assets/images/back.png" />
     <title>Suit Games</title>
   </head>
   <body>
@@ -69,7 +69,7 @@
         </li>
         <li class="ms-auto nav-item sign-bar">
           <span class="fas fa-user-plus d-md-none d-lg-none ps-sm-3"></span>
-          <a class="nav-link ms-md-3 me-md-2 ms-xxl-5" href="#top-scores"
+          <a class="nav-link ms-md-3 me-md-2 ms-xxl-5" href="/api/v1/users/signup"
             >Sign Up</a
           >
         </li>
@@ -77,7 +77,7 @@
           <span
             class="fas fa-right-to-bracket d-md-none d-lg-none ps-sm-2"
           ></span>
-          <a class="nav-link mx-md-3" href="#newsletter">Login</a>
+          <a class="nav-link mx-md-3" href="/api/v1/users/login">Login</a>
         </li>
       </ul>
     </nav>
@@ -93,7 +93,7 @@
           Experience new traditional gameplay
         </h3>
         <a
-          href="main.html"
+          href="/games/rockpaperscissors"
           class="play-button btn btn-warning text-uppercase rounded-1 fw-bold my-md-4 my-lg-2 my-xxl-5"
         >
           Play Now
@@ -149,21 +149,21 @@
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
                   <img
-                    src="/public/assets/images/carousel.png"
+                    src="./assets/images/carousel.png"
                     class="d-block w-100"
                     alt="game choice"
                   />
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
                   <img
-                    src="/public/assets/images/carousel.png"
+                    src="./assets/images/carousel.png"
                     class="d-block w-100"
                     alt="game choice"
                   />
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
                   <img
-                    src="/public/assets/images/carousel.png"
+                    src="./assets/images/carousel.png"
                     class="d-block w-100"
                     alt="game choice"
                   />
@@ -296,7 +296,7 @@
               <div class="card-body">
                 <div class="card-title m-0">
                   <img
-                    src="/public/assets/images/profil-1.jpg"
+                    src="./assets/images/profil-1.jpg"
                     alt="first-place"
                     class="profile-img position-relative rounded-circle"
                   />
@@ -321,7 +321,7 @@
               <div class="card-body">
                 <div class="card-title m-0">
                   <img
-                    src="/public/assets/images/profil-2.jpg"
+                    src="./assets/images/profil-2.jpg"
                     alt="second-place"
                     class="profile-img position-relative rounded-circle"
                   />
@@ -347,7 +347,7 @@
               <div class="card-body">
                 <div class="card-title m-0">
                   <img
-                    src="/public/assets/images/profil-3.jpg"
+                    src="./assets/images/profil-3.jpg"
                     alt="third-place"
                     class="profile-img position-relative rounded-circle"
                   />
@@ -382,7 +382,7 @@
             class="col-2 offset-1 col-sm-1 offset-sm-1 mt-4 container-img-news"
           >
             <img
-              src="/public/assets/images/bg-newsletter.png"
+              src="./assets/images/bg-newsletter.png"
               alt="logo"
               class="img-news"
             />
@@ -409,6 +409,7 @@
                     class="form-control text-warning border-0 p-0 ps-2 rounded-1"
                     id="floatingInput"
                     placeholder="name@example.com"
+                    autocomplete="off"
                   />
                   <label for="floatingInput" class="p-0"
                     >Your Email Address</label

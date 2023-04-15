@@ -24,12 +24,12 @@ class Games {
     if (win) {
       this.pScore++;
       playerScore.innerText = this.pScore;
-      audio.setAttribute("src", "./assets/audio/win.mp3");
+      audio.setAttribute("src", "/assets/audio/win.mp3");
       return result.setAttribute("class", "player-win");
     } else if (!win) {
       this.cScore++;
       comScore.innerText = this.cScore;
-      audio.setAttribute("src", "./assets/audio/lose.mp3");
+      audio.setAttribute("src", "/assets/audio/lose.mp3");
       return result.setAttribute("class", "com-win");
     }
   }
@@ -88,7 +88,7 @@ class Computer extends Games {
     }
   }
   spin() {
-    audio.setAttribute("src", "./assets/audio/spin.mp3");
+    audio.setAttribute("src", "/assets/audio/spin.mp3");
     result.setAttribute("class", "result");
     this.removeBox();
     boxSpin.classList.add("box-spin");
@@ -107,7 +107,7 @@ const com = new Computer(choices);
 function checkWinner() {
   boxSpin.classList.remove("box-spin");
   if (player.choice == com.choice) {
-    audio.setAttribute("src", "./assets/audio/draw.mp3");
+    audio.setAttribute("src", "/assets/audio/draw.mp3");
     return result.setAttribute("class", "draw");
   } else if (com.choice == "rock") {
     return player.choice == "paper"

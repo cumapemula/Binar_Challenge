@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <!-- Url CDN Bootstrap v5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style/login.css" />
+    <!-- Url Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Url Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/assets/images/back.png" />
+  </head>
+  <body>
+    <section id="login">
+      <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="wrapper rounded-4">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 return">
+                <a href="/" class="text-white text-uppercase"
+                  ><span class="fas fa-caret-left me-2 fw-bold"></span>Return to
+                  home</a
+                >
+              </div>
+              <div class="user-logo col-12 text-center">
+                <i class="fas fa-user fs-5 rounded-circle"></i>
+              </div>
+              <div class="col-12 text-center mb-1">
+                <h1 class="text-uppercase text-white">User Login</h1>
+              </div>
+            </div>
+            <% if (typeof errors !== 'undefined') { %>
+              <div class="alert alert-danger position-relative mb-0" role="alert">
+                <% errors.forEach(error => { %>
+                  <%= error.msg %>
+                <% }) %>
+              </div>
+            <% } %>
+            <form class="row" autocomplete="off" action="/api/v1/users/login" method="post">
+              <div class="col-12 wrapper-email">
+                <label
+                  for="inputEmail"
+                  class="fas fa-envelope fs-5 me-3 ms-2"
+                ></label>
+                <input
+                  type="email"
+                  id="inputEmail"
+                  class="input-email"
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  placeholder="Email Address"
+                  name="email"
+                  autofocus
+                  required
+                />
+              </div>
+              <div class="col-12 wrapper-password">
+                <label
+                  for="inputPassword"
+                  class="fas fa-key fs-5 me-3 ms-2"
+                ></label>
+                <input
+                  type="password"
+                  id="inputPassword"
+                  class="input-password"
+                  placeholder="Password"
+                  name="password"
+                  minlength="8"
+                  required
+                />
+                <i id="show-hide" class="fa-solid fa-eye-slash"></i>
+              </div>
+              <div class="btn-login col-12 text-center">
+                <button
+                  class="btn btn-primary text-uppercase fw-bold"
+                  type="submit"
+                >
+                  Login
+                </button>
+              </div>
+              <div
+                class="sign-up col-12 text-end mt-4 fw-bold text-white text-center"
+              >
+                <p>Don't have account? <a href="/api/v1/users/signup">Sign Up.</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Url Javascript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/script/login.js"></script>
+  </body>
+</html>

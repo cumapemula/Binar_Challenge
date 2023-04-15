@@ -1,0 +1,194 @@
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#login{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/images/bg-login.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper{
+  width: 350px;
+  height: 550px;
+  background-color: rgba(17, 25, 40, .3);
+  backdrop-filter: blur(18px);
+}
+.return{
+  width: 50%;
+  font-size: 12px;
+  padding: 0;
+  margin: 15px;
+}
+.return span{
+  color: #f436d8;
+}
+.user-logo{
+  padding: 0 !important;
+  margin: 20px 0 5px 0 !important;
+  color: #f436d8;
+}
+.wrapper-email{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.wrapper-email label, .wrapper-password label{
+  color: #f436d8;
+}
+.input-email, .input-password{
+  width: 250px;
+  color: #fff;
+  caret-color: #f436d8;
+  background-color: transparent;
+  border-width: 0 0 2px 0;
+  border-color: #fff;
+}
+input:valid{
+  border-color: #f436d8;
+}
+.input-email:focus, .input-password:focus{
+  outline: none;
+}
+#show-hide{
+  position: absolute;
+  right: 10%;
+  cursor: pointer;
+  color: #f436d8;
+}
+.btn-login .btn{
+  width: 300px;
+  letter-spacing: 3px;
+  margin-top: 40px;
+  background-color: #f436d8;
+  border: none;
+}
+.sign-up{
+  font-size: 14px;
+}
+.sign-up a{
+  color: #f436d8;
+}
